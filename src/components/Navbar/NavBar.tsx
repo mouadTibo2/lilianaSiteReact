@@ -2,7 +2,7 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import Button from "react-bootstrap/Button";
-import plateFormImage from "../../images/arrow-bar-right.svg"
+import plateFormImage from "/public/images/arrow-bar-right.svg"
 import TopNavBar from "./TopNavBar";
 import { useState } from 'react';
 import { useEffect } from 'react';

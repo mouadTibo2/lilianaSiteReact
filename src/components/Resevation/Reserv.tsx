@@ -2,7 +2,7 @@ import  "./reserv.css";
 import { Button } from "react-bootstrap";
 import { useState } from "react";
 
-import xSquareImage from "../../images/x-square.svg"
+import xSquareImage from "/public/images/x-square.svg"
 import ReservationCart from "./reservationCart";
 
 const Reserv = () => {

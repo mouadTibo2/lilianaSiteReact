@@ -4,7 +4,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Footer from "./Footer";
 import { CSSProperties } from "react";
-import Slide1 from  "../../../images/Slide-1.jpg";
+import Slide1 from  "/public/images/Slide-1.jpg";
 
 export default function Acceuil(){
 

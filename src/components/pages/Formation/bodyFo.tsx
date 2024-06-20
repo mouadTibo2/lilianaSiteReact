@@ -6,14 +6,21 @@ import FormationSalaries from "./FormationSalaries";
 import FormationJeune from "./FormationJeune";
 import FormationPourTout from "./FormationPourTout";
 
+
+
 const bodyFo = () => {
+  /* 1 = Formation chercheur d'emploi 
+    2 = Formation des salariés
+    3 = Formation des Jeune
+    4 = tout
+  */
 
 
   return (
     <Container className='my-5'>
       <h1>Formation des salariés</h1>
       <Row className='justify-content-evenly my-5'>
-        <FormationSalaries/>
+        <FormationSalaries />
       </Row>
       <h1>Formation des demandeurs d'emploi</h1>
       <Row className='justify-content-evenly my-5'>

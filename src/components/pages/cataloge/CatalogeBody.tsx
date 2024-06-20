@@ -2,7 +2,7 @@ import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
 import Image from 'react-bootstrap/Image';
 import Row from 'react-bootstrap/Row';
-import image1 from "../../../images/formationContinue.jfif"
+import image1 from "/public/images/formationContinue.jfif"
 
 const CatalogeBody = () => {
   return (

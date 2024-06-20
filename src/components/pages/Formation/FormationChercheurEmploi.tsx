@@ -1,16 +1,27 @@
-import  {formationData}  from "./formationData";
+
 
 import Col from 'react-bootstrap/Col';
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
-import whatupImage from '../../../images/whatsapp.svg';
-import "./styleFormation.css"
+import whatupImage from '/public/images/whatsapp.svg';
+import "./styleFormation.css";
+import formationData from "../../Data/formationData.json";
 
+
+type formationDataValue = {
+  idFormation: number,
+  audience: number,
+  dureFormation: string,
+  titreformation: string,
+  imageFormation: string,
+  descriptionFormation: string
+}
 function FormationChercheurEmploi() {
-  const FormationChercheurEmploiData = formationData.filter(item => {
+  
+  const FormationChercheurEmploiData = formationData.filter((item:formationDataValue) => {
     return item.audience == 1;
   });
-  const FormationChercheurEmploiMaped = FormationChercheurEmploiData.map(item =>{
+  const FormationChercheurEmploiMaped = FormationChercheurEmploiData.map((item:formationDataValue) =>{
     return (
   
     <Col sm={12} md={4}  className='mb-3 text-light packhovered' key={item.idFormation}>

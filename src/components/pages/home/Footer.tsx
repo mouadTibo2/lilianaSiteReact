@@ -4,12 +4,12 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Nav from "react-bootstrap/Nav";
 import { NavLink } from "react-router-dom";
-import whatupImage from '../../../images/whatsapp.svg';
-import facebookImage from '../../../images/facebook.svg';
-import instagramImage from '../../../images/instagram.svg';
-import telephone from '../../../images/telephone-fill.svg';
-import location from '../../../images/geo-alt-fill.svg';
-import email from '../../../images/envelope-at-fill.svg';
+import whatupImage from '/public/images/whatsapp.svg';
+import facebookImage from '/public/images/facebook.svg';
+import instagramImage from '/public/images/instagram.svg';
+import telephone from '/public/images/telephone-fill.svg';
+import location from '/public/images/geo-alt-fill.svg';
+import email from '/public/images/envelope-at-fill.svg';
 export default function Footer(){
   return (
     <>

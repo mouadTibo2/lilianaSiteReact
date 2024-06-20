@@ -3,10 +3,10 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 import ButtonGroup from 'react-bootstrap/ButtonGroup';
-import whatupImage from '../../images/whatsapp.svg';
-import facebookImage from '../../images/facebook.svg';
-import instagramImage from '../../images/instagram.svg';
-import telephone from '../../images/telephone-fill.svg'
+import whatupImage from '/public/images/whatsapp.svg';
+import facebookImage from '/public/images/facebook.svg';
+import instagramImage from '/public/images/instagram.svg';
+import telephone from '/public/images/telephone-fill.svg'
 
 
 export default function TopNavBar() {

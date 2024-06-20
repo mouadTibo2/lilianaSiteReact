@@ -1,0 +1,104 @@
+
+
+
+
+
+
+  [
+    {
+      "idFormation": 1,
+      "audience": 1,
+      "dureFormation":"Bac + 3",
+      "titreformation":"Bureautique",
+      "imageFormation": "../../images/Slide-1.jpg",
+      "descriptionFormation": "Word - Execel - PowerPoint (2016)"
+    },
+    {
+      "idFormation":2,
+      "audience": 1,
+      "dureFormation": "Bac + 3",
+      "titreformation":"Base informatique",
+      "imageFormation": "../../images/Slide-1.jpg" ,
+      "descriptionFormation": "Word - Execel - PowerPoint (2016)"
+    },
+    {
+      "idFormation":3,
+      "audience": 1,
+      "dureFormation": "Bac + 3",
+      "titreformation":"Dévloppement Web - FrontEnd",
+      "imageFormation": "../../../images/Slide-1.jpg",
+      "descriptionFormation": "HTML - CSS - Jvascript - BootStrap 5"
+    },
+    {
+      "idFormation": 4,
+      "audience": 2,
+      "dureFormation":"Bac + 3",
+      "titreformation":"Bureautique",
+      "imageFormation": "../../../images/Slide-1.jpg",
+      "descriptionFormation": "Word - Execel - PowerPoint (2016)"
+    },
+    {
+      "idFormation": 5,
+      "audience": 2,
+      "dureFormation": "Bac + 3",
+      "titreformation":"Base informatique",
+      "imageFormation": "../../../images/Slide-1.jpg"  ,
+      "descriptionFormation": "Word - Execel - PowerPoint (2016)"
+    },
+    {
+      "idFormation": 6,
+      "audience": 2,
+      "dureFormation": "Bac + 3",
+      "titreformation":"Dévloppement Web - FrontEnd",
+      "imageFormation": "../../../images/Slide-1.jpg",
+      "descriptionFormation": "HTML - CSS - Jvascript - BootStrap 5"
+    },
+    {
+      "idFormation":7,
+      "audience": 3,
+      "dureFormation": "Bac + 3",
+      "titreformation":"Base informatique",
+      "imageFormation": "../../../images/Slide-1.jpg" ,
+      "descriptionFormation": "Word - Execel - PowerPoint (2016)"
+    },
+    {
+      "idFormation":8,
+      "audience": 3,
+      "dureFormation": "Bac + 3",
+      "titreformation":"Dévloppement Web - FrontEnd",
+      "imageFormation": "../../../images/Slide-1.jpg",
+      "descriptionFormation": "HTML - CSS - Jvascript - BootStrap 5"
+    },
+    {
+      "idFormation":9,
+      "audience": 3,
+      "dureFormation": "Bac + 3",
+      "titreformation":"Dévloppement Web - FrontEnd",
+      "imageFormation": "../../../images/Slide-1.jpg",
+      "descriptionFormation": "HTML - CSS - Jvascript - BootStrap 5"
+    },
+    {
+      "idFormation": 9,
+      "audience": 4,
+      "dureFormation": "6 Mois",
+      "titreformation":"Langue - Francais",
+      "imageFormation": "../../../images/Slide-1.jpg",
+      "descriptionFormation": "Basic - verbe - ortograph"
+    },
+    {
+      "idFormation": 10,
+      "audience": 4,
+      "dureFormation": "6 Mois",
+      "titreformation":"Langue - Englais",
+      "imageFormation": "../../../images/Slide-1.jpg",
+      "descriptionFormation": "Basic - verbes - ortograph"
+    },
+    {
+      "idFormation": 11,
+      "audience": 4,
+      "dureFormation": "6 Mois",
+      "titreformation":"Langue - Espagnol",
+      "imageFormation": "../../../images/Slide-1.jpg",
+      "descriptionFormation": "Basic - verbes - ortograph"
+    }
+  ]

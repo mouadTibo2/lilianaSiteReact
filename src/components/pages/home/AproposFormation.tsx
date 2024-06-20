@@ -2,9 +2,9 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
-import whatupImage from '../../../images/whatsapp.svg';
+import whatupImage from '/public/images/whatsapp.svg';
 import "../Formation/styleFormation.css";
-import image1 from "../../../images/Slide-1.jpg";
+import image1 from "/public/images/Slide-1.jpg";
 import { Link } from "react-router-dom";
 
 const AproposFormation = () => {

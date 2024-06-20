@@ -1,7 +1,7 @@
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
-import imageSalirie from '../../../images/formationPourLesSalairie.jpg'
+import imageSalirie from '/public/images/formationPourLesSalairie.jpg'
 import { CSSProperties } from 'react';
 import AproposFormation from './AproposFormation';
 export default function Apropos(){

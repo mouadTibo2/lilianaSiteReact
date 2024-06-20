@@ -1,17 +1,27 @@
-import  {formationData}  from "./formationData";
+
 
 import Col from 'react-bootstrap/Col';
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
-import whatupImage from '../../../images/whatsapp.svg';
+import whatupImage from '/public/images/whatsapp.svg';
 import "./styleFormation.css"
 
+import formationData from "../../Data/formationData.json";
+
+type formationDataValue = {
+  idFormation: number,
+  audience: number,
+  dureFormation: string,
+  titreformation: string,
+  imageFormation: string,
+  descriptionFormation: string
+}
 function FormationPourTout() {
-  const FormationPourTout = formationData.filter(item => {
+  const FormationPourTout = formationData.filter((item:formationDataValue) => {
     return item.audience == 4;
   });
   
-  const FormationPourToutMaped = FormationPourTout.map(item =>{
+  const FormationPourToutMaped = FormationPourTout.map((item:formationDataValue) =>{
     return (
       <Col sm={12} md={4}  className='mb-3 text-light packhovered' key={item.idFormation}>
       <Card style={{ width: '100%' ,height:"100%"}}>
