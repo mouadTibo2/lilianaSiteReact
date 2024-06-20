@@ -1,0 +1,28 @@
+
+[
+    {
+        "id": 1,
+        "imagePath":"../../../images/formation.png"
+        
+    },
+    {
+        "id": 2,
+        "imagePath":"../../../images/formationContinue.jfif"
+    },
+    {
+        "id": 3,
+        "imagePath":"../../../images/formationContinue.jfif"
+    },
+    {
+        "id": 4,
+        "imagePath":"../../../images/formationPourLesSalairie.jpg"
+    },    
+    {
+        "id": 5,
+        "imagePath":"../../../images/skyimage.jpg"
+    },
+    {
+        "id": 6,
+        "imagePath":"../../../images/Slide-1.jpg"
+    }
+]

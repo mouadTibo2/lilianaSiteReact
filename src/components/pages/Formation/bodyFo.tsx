@@ -18,19 +18,19 @@ const bodyFo = () => {
 
   return (
     <Container className='my-5'>
-      <h1>Formation des salariés</h1>
+      <h1 className="text-center text-secondary">Formation des salariés</h1>
       <Row className='justify-content-evenly my-5'>
         <FormationSalaries />
       </Row>
-      <h1>Formation des demandeurs d'emploi</h1>
+      <h1 className="text-center text-secondary">Formation des demandeurs d'emploi</h1>
       <Row className='justify-content-evenly my-5'>
         <FormationChercheurEmploi/>
       </Row>
-      <h1>Formation des jeunes</h1>
+      <h1 className="text-center text-secondary">Formation des jeunes</h1>
       <Row className='justify-content-evenly my-5'>
         <FormationJeune/>
       </Row>
-      <h1>Autre Formation</h1>
+      <h1 className="text-center text-secondary">Autre Formation</h1>
       <Row className='justify-content-evenly my-5'>
         <FormationPourTout/>
       </Row>
