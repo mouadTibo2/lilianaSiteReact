@@ -22,7 +22,7 @@ const bodyFo = () => {
       <Row className='justify-content-evenly my-5'>
         <FormationSalaries />
       </Row>
-      <h1 className="text-center text-secondary">Formation des demandeurs d'emploi</h1>
+      <h1 className="text-center text-secondary">Formation des chercheur d'emploi</h1>
       <Row className='justify-content-evenly my-5'>
         <FormationChercheurEmploi/>
       </Row>
