@@ -1,0 +1,36 @@
+.myBtn{
+  width: 150px;
+  height: 75px;
+  background-color: #FF9EAA;
+  color: black;
+  font-weight: bold;
+}
+.hideBtn{
+  display: none;
+}
+.mypositiontop{
+  position: fixed;
+  top: 0;
+  left: 100;
+  opacity: 75%;
+  background-color: rgb(68, 67, 67);
+  z-index: 50;
+}
+.mypositionAboveTop{
+  position: absolute;
+  top: 10%;
+  left: 5%;
+  width: 90%;
+  background-color: #F7F9F2;
+  z-index: 300;
+  border-radius: 10px;
+}
+@media (min-width: 992px) { 
+  .mypositionAboveTop{
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    width: 90%;
+
+  }
+}
