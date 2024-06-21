@@ -22,7 +22,7 @@ export default function CatalogueFooter(){
       setImageClicked({id:id, imagePath:image})
     }
     const sixImages = images.map((image:imagesValue,index:number) => {
-        if ( index < 7 ){
+        if ( index < 6 ){
             return (
             <Col xs={6} md={4} className='my-3' key={image.id} onClick={() =>handelClickedBtn(image.id,image.imagePath)}>
               <Image src={image.imagePath} className='border-5' thumbnail />

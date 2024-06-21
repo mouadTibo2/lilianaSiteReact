@@ -20,14 +20,17 @@ const CatalogeBody = () => {
   }
   const imagesMaped = images.map((image:imagesValue) => {
     return (
-    <Col xs={6} md={4} className='my-3' key={image.id} onClick={() =>handelClickedBtn(image.id,image.imagePath)}>
-      <Image src={image.imagePath} className='border-5' thumbnail />
+    <Col xs={12} md={4}  className='my-3' key={image.id} onClick={() =>handelClickedBtn(image.id,image.imagePath)}>
+      <div className="d-flex w-100 h-100 pictureSize">
+        <Image src={image.imagePath} height="100%" className='border-5 img-fluid' rounded />   
+      </div>
+                
     </Col>
     );
   })
   return (
     <Container>
-      <Row className='justify-content-center align-items-center'>
+      <Row className='justify-content-center'>
         {imagesMaped}
         {btnAnnulerCataloge ? 
         <div className="position-relative">
@@ -36,10 +39,12 @@ const CatalogeBody = () => {
               <img src={xSquareImage} alt="" />
             </Button>
           </div>
-          <div className="position-fixed cataloguepositionAboveTop ">
-              <Image src={imageClicked.imagePath} className='border-5' thumbnail key={imageClicked.id}/>
             <div className="position-relative">
-            </div>
+              <Col className="cataloguepositionAboveTop">
+                <div className="d-flex justify-content-center align-items-center">
+                  <Image src={imageClicked.imagePath}  width="40%" className='img-fluid imgWidth' rounded key={imageClicked.id}/>
+                </div>
+              </Col>
           </div>
         </div>
         : 

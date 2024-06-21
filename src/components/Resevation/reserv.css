@@ -9,28 +9,29 @@
   display: none;
 }
 .mypositiontop{
-  position: fixed;
+  position: absolute;
   top: 0;
-  left: 100;
+  right: 0;
   opacity: 75%;
   background-color: rgb(68, 67, 67);
   z-index: 50;
 }
 .mypositionAboveTop{
   position: absolute;
-  top: 10%;
+  top: 60%;
   left: 5%;
   width: 90%;
   background-color: #F7F9F2;
   z-index: 300;
   border-radius: 10px;
+  margin-top:10%;
 }
 @media (min-width: 992px) { 
   .mypositionAboveTop{
     position: absolute;
-    top: 20%;
+    top: 60%;
     left: 5%;
     width: 90%;
-
+    margin-top:10%;
   }
 }

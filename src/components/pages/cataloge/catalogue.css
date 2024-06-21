@@ -2,22 +2,33 @@
     position: fixed;
     top: 0;
     left: 0;
-    opacity: 75%;
+    opacity: 90%;
     background-color: rgb(68, 67, 67);
     z-index: 10000;
 }
 .cataloguepositionAboveTop{
-    top: 10%;
-    left: 5%;
-    width: 90%;
+    position: fixed;
+    top: 20%;
+    left: 2.5%;
+    width: 100%;
+    height:auto;
     z-index: 30000;
     border-radius: 10px;
 }
+.pictureSize{
+    background-color: antiquewhite;
+}
+.imgWidth{
+    width: 80%;
+}
 @media (min-width: 992px) { 
 .cataloguepositionAboveTop{
-    top: 10%;
-    left: 5%;
-    width: 60%;
-    
+    position: fixed;
+    top:10%;
+    width: 100%;
+    height:auto;
+}
+.imgWidth{
+    width: 40%;
 }
 }

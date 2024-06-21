@@ -32,7 +32,7 @@ const Reserv = () => {
       <div className="position-relative">
         <div className="position-fixed mypositiontop w-100 h-100">
         </div>
-        <div className="position-fixed mypositionAboveTop">
+        <div className="mypositionAboveTop">
           <Button size="lg" variant="dark" className="position-absolute end-0 z-1 m-2" onClick={()=> setBtnState(false)}>
             <img src={xSquareImage} alt="" />
           </Button>

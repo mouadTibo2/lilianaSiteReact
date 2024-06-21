@@ -10,6 +10,8 @@ import Contact from "./components/pages/Contact/Contact";
 import Apropos from "./components/pages/home/Apropos";
 import Reserv from "./components/Resevation/Reserv";
 import { Suspense } from 'react';
+import ModalCover from "./components/pages/ModalFormationContent/ModalCover";
+
 
 export interface langueValue {
   langue:string,
@@ -28,7 +30,7 @@ function App() {
         >
           <NavBar /* langue={langue} setlangue={setlangue} *//>
           <Reserv/>
-          
+          <ModalCover/>
         <Routes>
           <Route path="/" element={<Acceuil/>}/>
           <Route path="/Apropos" element={<Apropos/>}/>

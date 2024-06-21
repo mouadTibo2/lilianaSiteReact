@@ -9,17 +9,14 @@ import formationData from "../../Data/formationData.json";
 type formationDataValue = {
   idFormation: number,
   audience: number,
-  dureFormation: string,
   titreformation: string,
   imageFormation: string,
   descriptionFormation: string
 }
 
 function FormationSalaries() {
-  const FormationSalaries = formationData.filter((item:formationDataValue) => {
-    return item.audience == 2;
-  });
-  const FormationSalariesMaped = FormationSalaries.map((item:formationDataValue) =>{
+  
+  const FormationSalariesMaped = formationData.map((item:formationDataValue) =>{
     return (
   
     <Col sm={12} md={4} className='mb-3 text-light packhovered' key={item.idFormation}>
@@ -27,7 +24,7 @@ function FormationSalaries() {
         <div className="position-realtive">
           <img className="img-fluid scaleImg rounded"  src={item.imageFormation} alt=""/>
           <div>
-            <p className="text-white bg-info fw-medium programmePostion">Programme Bac + {item.dureFormation}</p>
+            <p className="text-white bg-info fw-medium programmePostion">Programme</p>
           </div>
         </div>
         <Card.Body>

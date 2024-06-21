@@ -10,16 +10,12 @@ import formationData from "../../Data/formationData.json";
 type formationDataValue = {
   idFormation: number,
   audience: number,
-  dureFormation: string,
   titreformation: string,
   imageFormation: string,
   descriptionFormation: string
 }
 function FormationJeune() {
-  const FormationJeune = formationData.filter((item:formationDataValue) => {
-    return item.audience == 3;
-  });
-  const FormationJeuneMaped = FormationJeune.map((item:formationDataValue) =>{
+  const FormationJeuneMaped = formationData.map((item:formationDataValue) =>{
     return (
   
     <Col sm={12} md={4}  className='mb-3 text-light packhovered' key={item.idFormation}>
@@ -27,7 +23,7 @@ function FormationJeune() {
         <div className="position-realtive">
           <img className="img-fluid scaleImg rounded"  src={item.imageFormation} alt=""/>
           <div>
-            <p className="text-white bg-info fw-medium programmePostion">Programme {item.dureFormation}</p>
+            <p className="text-white bg-info fw-medium programmePostion">Programme</p>
           </div>
         </div>
         <Card.Body>
