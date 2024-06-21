@@ -9,6 +9,7 @@ import InscriptionEnLigne from "./components/pages/Inscription en ligne/Inscript
 import Contact from "./components/pages/Contact/Contact";
 import Apropos from "./components/pages/home/Apropos";
 import Reserv from "./components/Resevation/Reserv";
+import { Suspense } from 'react';
 
 export interface langueValue {
   langue:string,
@@ -16,26 +17,29 @@ export interface langueValue {
 }  
 
 function App() {
-  /* const [langue, setlangue] = useState("FR"); */
+  
   return (
     <>
-    <div style={{backgroundColor:"#F3F7EC"}}>
-      <ThemeProvider
-        breakpoints={['xxxl', 'xl', 'lg', 'md', 'sm', 'xs', 'xxs']}
-        minBreakpoint="xxs"
-      >
-        <NavBar /* langue={langue} setlangue={setlangue} *//>
-        <Reserv/>
-      <Routes>
-        <Route path="/" element={<Acceuil/>}/>
-        <Route path="/Apropos" element={<Apropos/>}/>
-        <Route path="/Formation" element={<Formation/>}/>
-        <Route path="/Cataloge" element={<Cataloge/>}/>
-        <Route path="/Contact" element={<Contact/>}/>
-        <Route path="/InscriptionEnLigne" element={<InscriptionEnLigne/>}/>
-      </Routes>
-      </ThemeProvider>
-    </div>
+    <Suspense fallback="loading">
+      <div style={{backgroundColor:"#F3F7EC"}}>
+        <ThemeProvider
+          breakpoints={['xxxl', 'xl', 'lg', 'md', 'sm', 'xs', 'xxs']}
+          minBreakpoint="xxs"
+        >
+          <NavBar /* langue={langue} setlangue={setlangue} *//>
+          <Reserv/>
+          
+        <Routes>
+          <Route path="/" element={<Acceuil/>}/>
+          <Route path="/Apropos" element={<Apropos/>}/>
+          <Route path="/Formation" element={<Formation/>}/>
+          <Route path="/Cataloge" element={<Cataloge/>}/>
+          <Route path="/Contact" element={<Contact/>}/>
+          <Route path="/InscriptionEnLigne" element={<InscriptionEnLigne/>}/>
+        </Routes>
+        </ThemeProvider>
+      </div>
+    </Suspense>
 
     </>
   )

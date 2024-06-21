@@ -29,7 +29,6 @@ const CatalogeBody = () => {
     <Container>
       <Row className='justify-content-center align-items-center'>
         {imagesMaped}
-        <h1 className='my-3 text-center text-secondary'>Notre Catalogue</h1>
         {btnAnnulerCataloge ? 
         <div className="position-relative">
           <div className="position-fixed cataloguepositiontop w-100 h-100">

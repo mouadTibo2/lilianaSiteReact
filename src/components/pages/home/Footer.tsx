@@ -10,6 +10,7 @@ import instagramImage from '/public/images/instagram.svg';
 import telephone from '/public/images/telephone-fill.svg';
 import location from '/public/images/geo-alt-fill.svg';
 import email from '/public/images/envelope-at-fill.svg';
+import CatalogueFooter from '../cataloge/CatalogueFooter';
 export default function Footer(){
   return (
     <>
@@ -50,8 +51,7 @@ export default function Footer(){
           <h4 className='text-decoration-underline text-dark mb-3 text-center'>Cataloge</h4>
             
             <div className='mt-2 d-flex w-100 justify-content-center'>
-              <img src={telephone} alt="telephone" className='mx-3 text-dark'/>
-              
+              <CatalogueFooter/>
             </div>
           </Col>
         </Row>

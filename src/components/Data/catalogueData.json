@@ -2,12 +2,12 @@
 [
     {
         "id": 1,
-        "imagePath":"../../../images/formation.png"
-        
+        "imagePath":"../../../images/formationContinue.jfif"
     },
     {
         "id": 2,
-        "imagePath":"../../../images/formationContinue.jfif"
+        "imagePath":"../../../images/formation.png"
+        
     },
     {
         "id": 3,
@@ -24,5 +24,13 @@
     {
         "id": 6,
         "imagePath":"../../../images/Slide-1.jpg"
+    },
+    {
+        "id": 7,
+        "imagePath":"../../../images/imagePourleschercheur.jpg"
+    },
+    {
+        "id": 8,
+        "imagePath":"../../../images/imagePourlesJeune.jpg"
     }
 ]

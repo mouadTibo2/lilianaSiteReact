@@ -18,7 +18,10 @@ export default function Cataloge(){
           <h1 className=" ">Catalogue</h1>
         </div>
       </div>
-      <CatalogeBody/>
+      <div>
+      <h1 className='my-3 text-center text-secondary'>Notre Catalogue</h1>
+        <CatalogeBody/>
+        </div>
       <Footer/>
     </>
   )

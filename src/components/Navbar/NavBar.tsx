@@ -7,9 +7,10 @@ import TopNavBar from "./TopNavBar";
 import { useState } from 'react';
 import { useEffect } from 'react';
 import { NavLink } from "react-router-dom";
-
+import { useTranslation } from "react-i18next";
 
 export default function NavBar() {
+  const {t} = useTranslation();
   const [screenWidth, setScreenWidth]= useState(window.screen.width);
   function screenChange(){
     setScreenWidth(window.screen.width);
@@ -29,19 +30,19 @@ export default function NavBar() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="ms-auto">  
-            <Nav.Link to="/" as={NavLink}>Acceuil</Nav.Link>
-            <Nav.Link to="/" as={NavLink}>A propos</Nav.Link>
-            <Nav.Link to="/Formation" as={NavLink}>Formation</Nav.Link>
-            <Nav.Link to="/Cataloge" as={NavLink}>Catalogue</Nav.Link>
-            <Nav.Link to="/Contact" as={NavLink}>Contact</Nav.Link>
-            <Nav.Link to="/InscriptionEnLigne" as={NavLink}>Inscription en ligne</Nav.Link>
+            <Nav.Link to="/" as={NavLink}>{t('acceuil')}</Nav.Link>
+            <Nav.Link to="/" as={NavLink}>{t('apropos')}</Nav.Link>
+            <Nav.Link to="/Formation" as={NavLink}>{t('formation')}</Nav.Link>
+            <Nav.Link to="/Cataloge" as={NavLink}>{t('catalogue')}</Nav.Link>
+            <Nav.Link to="/Contact" as={NavLink}>{t('contact')}</Nav.Link>
+            <Nav.Link to="/InscriptionEnLigne" as={NavLink}>{t('inscriptionEnLigne')}</Nav.Link>
           </Nav>
           
         </Navbar.Collapse>
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto mb-2">
             <Nav.Link >
-              <Button>Plate Forme
+              <Button>{t('plateForme')}
                 <img src={plateFormImage} alt="plateFormImage" />
               </Button>
             </Nav.Link>
