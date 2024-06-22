@@ -7,92 +7,346 @@
   [
     {
       "idFormation": 1,
-      "audience": 1,
       "titreformation":"Bureautique",
       "imageFormation": "../../images/educationOnline1.jpg",
-      "descriptionFormation": "Word - Execel - PowerPoint (2016)"
+      "descriptionFormation": "Word - Execel - PowerPoint (2016)",
+      "modules":[
+        {
+          "moduleId": 1,
+          "moduleNom":"Word",
+          "moduleObjectif": "Microsoft office Word"
+        },
+        {
+          "moduleId": 2,
+          "moduleNom":"Execel",
+          "moduleObjectif": "Microsoft office Execel"
+        },
+        {
+          "moduleId": 3,
+          "moduleNom":"PowerPoint",
+          "moduleObjectif": "Microsoft office PowerPoint"
+        }
+      ]
     },
     {
       "idFormation":2,
-      "audience": 1,
       "titreformation":"Base informatique",
       "imageFormation": "../../images/educationOnline1.jpg" ,
-      "descriptionFormation": "Word - Execel - PowerPoint (2016)"
+      "descriptionFormation": "Hardware - Software",
+      "modules":[
+        {
+          "moduleId": 1,
+          "moduleNom":"Hardware",
+          "moduleObjectif": "les composant Hardware"
+        },
+        {
+          "moduleId": 2,
+          "moduleNom":"Software",
+          "moduleObjectif": "les composant Software"
+        }
+      ]
     },
     {
       "idFormation":3,
-      "audience": 1,
       "titreformation":"Dévloppement Web - FrontEnd",
       "imageFormation": "../../../images/educationOnline1.jpg",
-      "descriptionFormation": "HTML - CSS - Jvascript - BootStrap 5"
+      "descriptionFormation": "HTML - CSS - Jvascript - BootStrap 5",
+      "modules":[
+        {
+          "moduleId": 1,
+          "moduleNom":"HTML",
+          "moduleObjectif": "la base de development web et language de balisage HTML"
+        },
+        {
+          "moduleId": 2,
+          "moduleNom":"CSS",
+          "moduleObjectif": "Css designer Html"
+        },
+        {
+          "moduleId": 3,
+          "moduleNom":"Jvascript",
+          "moduleObjectif": "la base de language javascript"
+        },
+        {
+          "moduleId": 4,
+          "moduleNom":"BootStrap 5",
+          "moduleObjectif": "framwork BootStrap 5"
+        }
+      ]
     },
     {
       "idFormation": 4,
-      "audience": 2,
-      "titreformation":"Bureautique",
+      "titreformation":"Dévloppement Web - BackEnd",
       "imageFormation": "../../../images/educationOnline2.jpg",
-      "descriptionFormation": "Word - Execel - PowerPoint (2016)"
+      "descriptionFormation": "PHP - AJAX - JQUERY - LARAVEL",
+      "modules":[
+        {
+          "moduleId": 1,
+          "moduleNom":"PHP",
+          "moduleObjectif": "la base de Langage PHP"
+        },
+        {
+          "moduleId": 2,
+          "moduleNom":"AJAX",
+          "moduleObjectif": "bibliothèque de javascript AJAX"
+        },
+        {
+          "moduleId": 3,
+          "moduleNom":"JQUERY",
+          "moduleObjectif": "bibliothèque de javascript JQUERY"
+        },
+        {
+          "moduleId": 4,
+          "moduleNom":"LARAVEL",
+          "moduleObjectif": "bibliothèque de PHP LARAVEL"
+        }
+      ]
     },
     {
       "idFormation": 5,
-      "audience": 2,
-      "titreformation":"Base informatique",
-      "imageFormation": "../../../images/educationOnline2.jpg"  ,
-      "descriptionFormation": "Word - Execel - PowerPoint (2016)"
+      "titreformation":"Base de Données",
+      "imageFormation": "../../../images/educationOnline2.jpg",
+      "descriptionFormation": "Langage SQL - SGBD : MYSQL",
+      "modules":[
+        {
+          "moduleId": 1,
+          "moduleNom":"Langage SQL",
+          "moduleObjectif": "la base de Langage SQL"
+        },
+        {
+          "moduleId": 2,
+          "moduleNom":"SGBD : MYSQL",
+          "moduleObjectif": "les commands de SGBD : MYSQL"
+        }
+      ]
     },
     {
       "idFormation": 6,
-      "audience": 2,
-      "titreformation":"Dévloppement Web - FrontEnd",
+      "titreformation":"Prgrammation intiation",
       "imageFormation": "../../../images/educationOnline2.jpg",
-      "descriptionFormation": "HTML - CSS - Jvascript - BootStrap 5"
+      "descriptionFormation": "Algrithme - Langage C",
+      "modules":[
+        {
+          "moduleId": 1,
+          "moduleNom":"Algrithme",
+          "moduleObjectif": "Commant creer un algrithme"
+        },
+        {
+          "moduleId": 2,
+          "moduleNom":"Langage C",
+          "moduleObjectif": "Langage C avec project finale"
+        }
+      ]
     },
     {
-      "idFormation":7,
-      "audience": 3,
-      "titreformation":"Base informatique",
-      "imageFormation": "../../../images/Slide-1.jpg" ,
-      "descriptionFormation": "Word - Execel - PowerPoint (2016)"
+      "idFormation": 7,
+      "titreformation":"Formation en Management",
+      "imageFormation": "../../images/educationOnline1.jpg",
+      "descriptionFormation": "Communication - les fonctions de gestion - leadership",
+      "modules":
+      [
+        {
+          "moduleId": 1,
+          "moduleNom":"Fondements du Management",
+          "moduleObjectif": "Comprendre les principes fondamentaux du management, les styles de leadership et les fonctions de gestion."
+        },
+        {
+          "moduleId": 2,
+          "moduleNom":"Communication et Leadership",
+          "moduleObjectif": "Améliorer les compétences de communication, renforcer le leadership et la prise de décision."
+        },
+        {
+          "moduleId": 3,
+          "moduleNom":"Gestion des Ressources Humaines",
+          "moduleObjectif": "Apprendre à recruter, motiver, et développer les compétences de l'équipe."
+        },
+        {
+          "moduleId": 4,
+          "moduleNom":"Gestion de Projet",
+          "moduleObjectif": "Acquérir des compétences en planification, exécution, suivi et évaluation de projets."
+        },
+        {
+          "moduleId": 5,
+          "moduleNom":"Gestion de la Performance",
+          "moduleObjectif": "Évaluer et améliorer la performance individuelle et organisationnelle."
+        },
+        {
+          "moduleId": 6,
+          "moduleNom":"Gestion du Changement",
+          "moduleObjectif": "Comprendre les processus de changement, développer des compétences pour gérer les transitions et résoudre les résistances."
+        },
+        {
+          "moduleId": 7,
+          "moduleNom":"Éthique et Responsabilité Sociale",
+          "moduleObjectif": "Sensibiliser aux questions éthiques en affaires, promouvoir la responsabilité sociale des entreprises"
+        },
+        {
+          "moduleId": 8,
+          "moduleNom":"Innovation et Créativité",
+          "moduleObjectif": "Stimuler la pensée créative, favoriser l'innovation dans la gestion."
+        },
+        {
+          "moduleId": 9,
+          "moduleNom":"Gestion de la Qualité",
+          "moduleObjectif": "Assurer la qualité des produits ou services, mettre en œuvre des processus d'amélioration continue."
+        }
+      ]
     },
     {
-      "idFormation":8,
-      "audience": 3,
-      "titreformation":"Dévloppement Web - FrontEnd",
-      "imageFormation": "../../../images/Slide-1.jpg",
-      "descriptionFormation": "HTML - CSS - Jvascript - BootStrap 5"
-    },
-    {
-      "idFormation":9,
-      "audience": 3,
-      "titreformation":"Dévloppement Web - FrontEnd",
-      "imageFormation": "../../../images/Slide-1.jpg",
-      "descriptionFormation": "HTML - CSS - Jvascript - BootStrap 5"
+      "idFormation": 8,
+      "titreformation":"Formation en Ressources Humaines",
+      "imageFormation": "../../images/educationOnline1.jpg",
+      "descriptionFormation": "Gestion Administrative  - Recrutement - Relations Sociales ",
+      "modules":
+      [
+        {
+          "moduleId": 1,
+          "moduleNom":"Gestion Administrative du Personnel",
+          "moduleObjectif": "Comprendre les procédures administratives liées aux ressources humaines, maîtriser la gestion des contrats, des absences, et des dossiers du personnel."
+        },
+        {
+          "moduleId": 2,
+          "moduleNom":"Recrutement et Sélection",
+          "moduleObjectif": "Acquérir les compétences pour mener des entretiens de recrutement, élaborer des descriptions de poste, utiliser des outils d'évaluation des candidats."
+        },
+        {
+          "moduleId": 3,
+          "moduleNom":"Formation et Développement des Compétences",
+          "moduleObjectif": "Concevoir et mettre en œuvre des programmes de formation, évaluer les besoins en développement des compétences, suivre l'évolution des compétences au sein de l'organisation."
+        },
+        {
+          "moduleId": 4,
+          "moduleNom":"Relations Sociales et Droit du Travail",
+          "moduleObjectif": "Comprendre les aspects juridiques liés au travail, gérer les relations avec les représentants du personnel, connaître les droits et devoirs des employeurs et des salariés."
+        },
+        {
+          "moduleId": 5,
+          "moduleNom":"Gestion de la Performance",
+          "moduleObjectif": "Élaborer des systèmes d'évaluation des performances, mettre en place des entretiens d'évaluation, développer des plans d'amélioration."
+        },
+        {
+          "moduleId": 6,
+          "moduleNom":"Gestion de la Diversité",
+          "moduleObjectif": "Sensibiliser à la diversité en milieu professionnel, promouvoir l'égalité des chances, gérer les enjeux liés à la diversité culturelle et sociale."
+        },
+        {
+          "moduleId": 7,
+          "moduleNom":"Santé et Bien-être au Travail",
+          "moduleObjectif": "Comprendre les enjeux liés à la santé mentale et physique des employés, développer des initiatives pour améliorer le bien-être au travail."
+        },
+        {
+          "moduleId": 8,
+          "moduleNom":"Systèmes d'Information RH (SIRH)",
+          "moduleObjectif": "Maîtriser l'utilisation des outils informatiques dédiés aux RH, optimiser les processus grâce aux systèmes d'information dédiés."
+        }
+      ]
     },
     {
       "idFormation": 9,
-      "audience": 4,
-      "titreformation":"Langue- francais",
-      "imageFormation": "../../../images/Slide-1.jpg",
-      "descriptionFormation": "Basic"
-    },{
+      "titreformation":"Formation en Marketing",
+      "imageFormation": "../../images/educationOnline1.jpg",
+      "descriptionFormation": "Fondements du Marketing  - Marketing Stratégique - Marketing Digital",
+      "modules":
+      [
+        {
+          "moduleId": 1,
+          "moduleNom":"Fondements du Marketing",
+          "moduleObjectif": "Comprendre les concepts de base du marketing, les principes de segmentation, ciblage et positionnement, ainsi que les éléments du mix marketing (les 4P : Produit, Prix, Place, Promotion)."
+        },
+        {
+          "moduleId": 2,
+          "moduleNom":"Études de Marché et Analyse de la Concurrence",
+          "moduleObjectif": "Acquérir des compétences dans la collecte et l'analyse de données de marché, comprendre les comportements des consommateurs, évaluer la concurrence."
+        },
+        {
+          "moduleId": 3,
+          "moduleNom":"Marketing Digital",
+          "moduleObjectif": "Maîtriser les stratégies de marketing en ligne, incluant la gestion des médias sociaux, le référencement (SEO), le marketing par e-mail et la publicité en ligne."
+        },
+        {
+          "moduleId": 4,
+          "moduleNom":"Marketing Stratégique",
+          "moduleObjectif": "Développer des compétences dans la planification stratégique marketing, la définition des objectifs, la segmentation stratégique, et la création de propositions de valeur."
+        },
+        {
+          "moduleId": 5,
+          "moduleNom":"Communication Marketing",
+          "moduleObjectif": "Apprendre à concevoir des messages marketing efficaces, élaborer des campagnes publicitaires, gérer la communication de marque."
+        },
+        {
+          "moduleId": 6,
+          "moduleNom":"Gestion de la Relation Client (CRM)",
+          "moduleObjectif": "Comprendre l'importance de la relation client, maîtriser les outils de gestion de la relation client, améliorer la satisfaction client et la fidélisation."
+        },
+        {
+          "moduleId": 7,
+          "moduleNom":"Analyse de Performance et KPIs",
+          "moduleObjectif": "Savoir mesurer et évaluer les performances des campagnes marketing, utiliser des indicateurs clés de performance (KPIs) pour optimiser les résultats."
+        },
+        {
+          "moduleId": 8,
+          "moduleNom":"Marketing Éthique et Responsabilité Sociale",
+          "moduleObjectif": "Sensibiliser aux enjeux éthiques du marketing, intégrer des pratiques responsables dans les stratégies marketing, gérer la réputation de l'entreprise."
+        }
+      ]
+    },
+    {
       "idFormation": 10,
-      "audience": 4,
-      "titreformation":"Langue- francais",
-      "imageFormation": "../../../images/Slide-1.jpg",
-      "descriptionFormation": "Professionel"
+      "titreformation":"Formation comptabilité Générale",
+      "imageFormation": "../../images/educationOnline1.jpg",
+      "descriptionFormation": "Formation comptabilité Générale  - Marketing Stratégique - Marketing Digital",
+      "modules":
+      [
+        {
+          "moduleId": 1,
+          "moduleNom":"Formation comptabilité Générale",
+          "moduleObjectif": "Comprendre les principes de base de la comptabilité, la structure des états financiers, et les normes comptables."
+        },
+        {
+          "moduleId": 2,
+          "moduleNom":"Enregistrement des Opérations Comptables",
+          "moduleObjectif": "Acquérir des compétences dans la saisie des transactions courantes, la tenue des journaux et des grands livres."
+        },
+        {
+          "moduleId": 3,
+          "moduleNom":"Principes de la Comptabilité Générale",
+          "moduleObjectif": "Approfondir la compréhension des principes comptables tels que la partie double, la constatation des revenus et des charges, la dépréciation des actifs, etc."
+        },
+        {
+          "moduleId": 4,
+          "moduleNom":"Élaboration des États Financiers",
+          "moduleObjectif": "Apprendre à préparer les états financiers tels que le bilan, le compte de résultat, et le tableau de flux de trésorerie."
+        }
+      ]
     },
     {
       "idFormation": 11,
-      "audience": 4,
-      "titreformation":"Langue",
-      "imageFormation": "../../../images/Slide-1.jpg",
-      "descriptionFormation": "Basic et Professionel"
-    },
-    {
-      "idFormation": 12,
-      "audience": 1,
-      "titreformation":"Formation en Management",
-      "imageFormation": "../../../images/Slide-1.jpg",
-      "descriptionFormation": "les fondamental - styles - leadership "
+      "titreformation":"Formation Comptabilité analytique",
+      "imageFormation": "../../images/educationOnline1.jpg",
+      "descriptionFormation": "Formation comptabilité Générale  - Marketing Stratégique - Marketing Digital",
+      "modules":
+      [
+        {
+          "moduleId": 1,
+          "moduleNom":"Fondements de la Comptabilité Analytique",
+          "moduleObjectif": "Comprendre les principes fondamentaux de la comptabilité analytique, distinguer entre la comptabilité générale et la comptabilité analytique."
+        },
+        {
+          "moduleId": 2,
+          "moduleNom":"Méthodes de Calcul des Coûts",
+          "moduleObjectif": "Acquérir des compétences dans les méthodes de calcul des coûts, y compris le coût complet, le coût variable, et les méthodes par activité."
+        },
+        {
+          "moduleId": 3,
+          "moduleNom":"Systèmes de Gestion des Coûts",
+          "moduleObjectif": "Apprendre à concevoir et mettre en œuvre des systèmes de gestion des coûts adaptés à différents types d'entreprises."
+        },
+        {
+          "moduleId": 4,
+          "moduleNom":"Analyse des Coûts et Marges",
+          "moduleObjectif": "Savoir analyser les coûts de production, comprendre les marges bénéficiaires, identifier les points critiques et les leviers d'amélioration."
+        }
+      ]
     }
+
   ]
