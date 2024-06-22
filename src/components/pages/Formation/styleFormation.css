@@ -11,6 +11,9 @@
   border-radius: 20px;
   font-size: 10px;
 }
+.customHeight {
+  height: 60vh
+}
 @media (min-width: 576px) { 
   .programmePostion {
     position: absolute;

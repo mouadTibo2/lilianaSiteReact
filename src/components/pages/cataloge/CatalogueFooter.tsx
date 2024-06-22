@@ -42,11 +42,11 @@ export default function CatalogueFooter(){
                 <img src={xSquareImage} alt="" />
               </Button>
             </div>
-            <div className="position-fixed cataloguepositionAboveTop ">
-                <Image src={imageClicked.imagePath} className='border-5' thumbnail key={imageClicked.id}/>
-              <div className="position-relative">
+            <Col md={5} className='cataloguepositionAboveTop customHeight'>
+              <div className="d-flex justify-content-center align-items-center">
+                <Image src={imageClicked.imagePath}  width="40%" className='img-fluid imgWidth' rounded key={imageClicked.id}/>
               </div>
-            </div>
+            </Col>
           </div>
           : 
           null}

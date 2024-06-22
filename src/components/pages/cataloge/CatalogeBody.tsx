@@ -40,11 +40,11 @@ const CatalogeBody = () => {
             </Button>
           </div>
             <div className="position-relative">
-              <Col className="cataloguepositionAboveTop">
-                <div className="d-flex justify-content-center align-items-center">
-                  <Image src={imageClicked.imagePath}  width="40%" className='img-fluid imgWidth' rounded key={imageClicked.id}/>
-                </div>
-              </Col>
+            <Col md={5} className='cataloguepositionAboveTop customHeight'>
+              <div className="d-flex justify-content-center align-items-center">
+                <Image src={imageClicked.imagePath}  width="40%" className='img-fluid imgWidth' rounded key={imageClicked.id}/>
+              </div>
+            </Col>
           </div>
         </div>
         : 

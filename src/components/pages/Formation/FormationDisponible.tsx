@@ -6,7 +6,6 @@ import Button from 'react-bootstrap/Button';
 import whatupImage from '/public/images/whatsapp.svg';
 import "./styleFormation.css";
 import formationData from "../../Data/formationData.json";
-
 import Modal from 'react-bootstrap/Modal';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
@@ -25,12 +24,12 @@ function FormationDisponible() {
     console.log(ModulesMaped);
     const ModaleMaped = ModulesMaped.map(item =>{
       return (
-      <Row className='my-5 gap-5' key={item.moduleId}>
-        <Col md={5}>
-          <img src="" className="img-fluid w-100 h-100 rounded" alt="" />
+      <Row className='my-5 gap-5 justify-content-center' key={item.moduleId}>
+        <Col md={5} className='p-4 customHeight'>
+          <img src={item.moduleImage} width="100%" height="100%" className="rounded" alt="" />
         </Col>
-        <Col md={6}>
-          <div className="d-flex flex-column w-100 h-100">
+        <Col md={6} className='customHeight'>
+          <div className="d-flex flex-column">
             <h3>
               {item.moduleNom}
             </h3>
@@ -46,9 +45,9 @@ function FormationDisponible() {
   
     <Col sm={12} md={4}  className='mb-3 text-light packhovered' key={item.idFormation}>
       <Card style={{ width: '100%' ,height:"100%"}}>
-        <div className="position-realtive">
-          <img className="img-fluid scaleImg rounded"  src={item.imageFormation} alt=""/>
-          <div>
+        <div className="">
+          <Card.Img variant="top" className="img-fluid scaleImg rounded"  src={item.imageFormation}  />
+        <div>
           <Button variant="primary" className="text-white bg-info fw-medium programmePostion" onClick={handleShow}>
             Programme
           </Button>
