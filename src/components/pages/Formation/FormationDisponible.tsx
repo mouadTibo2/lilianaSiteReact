@@ -10,16 +10,10 @@ import formationData from "../../Data/formationData.json";
 import Modal from 'react-bootstrap/Modal';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
-import MWordImage from "/public/images/Mwordimage.png"
-import MPImage from "/public/images/powerPoint.png"
-import MEImage from "/public/images/excel.png"
 import { useState } from 'react';
 
 function FormationDisponible() {
 
-
- 
-  
   const FormationChercheurEmploiMaped = formationData.map((item) =>{
     const [show, setShow] = useState(false);
     const handleClose = () => setShow(false);
@@ -33,7 +27,7 @@ function FormationDisponible() {
       return (
       <Row className='my-5 gap-5' key={item.moduleId}>
         <Col md={5}>
-          <img src={MWordImage} className="img-fluid w-100 h-100 rounded" alt="" />
+          <img src="" className="img-fluid w-100 h-100 rounded" alt="" />
         </Col>
         <Col md={6}>
           <div className="d-flex flex-column w-100 h-100">
