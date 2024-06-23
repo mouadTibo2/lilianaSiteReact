@@ -40,13 +40,13 @@
         {
           "moduleId": 1,
           "moduleNom":"Hardware",
-          "moduleImage":"",
+          "moduleImage":"../../images/hardware.jpg",
           "moduleObjectif": "les composant Hardware"
         },
         {
           "moduleId": 2,
           "moduleNom":"Software",
-          "moduleImage":"",
+          "moduleImage":"../../images/software.jpg",
           "moduleObjectif": "les composant Software"
         }
       ]
@@ -60,25 +60,25 @@
         {
           "moduleId": 1,
           "moduleNom":"HTML",
-          "moduleImage":"",
+          "moduleImage":"../../images/html.png",
           "moduleObjectif": "la base de development web et language de balisage HTML"
         },
         {
           "moduleId": 2,
           "moduleNom":"CSS",
-          "moduleImage":"",
+          "moduleImage":"../../images/css.png",
           "moduleObjectif": "Css designer Html"
         },
         {
           "moduleId": 3,
-          "moduleNom":"Jvascript",
-          "moduleImage":"",
+          "moduleNom":"Javascript",
+          "moduleImage":"../../images/javascript.png",
           "moduleObjectif": "la base de language javascript"
         },
         {
           "moduleId": 4,
           "moduleNom":"BootStrap 5",
-          "moduleImage":"",
+          "moduleImage":"../../images/bootstrap5.png",
           "moduleObjectif": "framwork BootStrap 5"
         }
       ]
@@ -86,38 +86,38 @@
     {
       "idFormation": 4,
       "titreformation":"Dévloppement Web - BackEnd",
-      "imageFormation": "../../../images/frontEnd.jpg",
+      "imageFormation": "../../../images/backend1.jpg",
       "descriptionFormation": "PHP - AJAX - JQUERY - LARAVEL",
       "modules":[
         {
           "moduleId": 1,
           "moduleNom":"PHP",
-          "moduleImage":"",
+          "moduleImage":"../../images/php.jpg",
           "moduleObjectif": "la base de Langage PHP"
         },
         {
           "moduleId": 2,
           "moduleNom":"AJAX",
-          "moduleImage":"",
+          "moduleImage":"../../images/ajax.png",
           "moduleObjectif": "bibliothèque de javascript AJAX"
         },
         {
           "moduleId": 3,
           "moduleNom":"JQUERY",
-          "moduleImage":"",
+          "moduleImage":"../../images/jquery.png",
           "moduleObjectif": "bibliothèque de javascript JQUERY"
         },
         {
           "moduleId": 4,
           "moduleNom":"LARAVEL",
-          "moduleImage":"",
+          "moduleImage":"../../images/phpLaravel.jpg",
           "moduleObjectif": "bibliothèque de PHP LARAVEL"
         }
       ]
     },
     {
       "idFormation": 5,
-      "titreformation":"Base de Données",
+      "titreformation":"Base bde Données",
       "imageFormation": "../../../images/dataBase1.jpg",
       "descriptionFormation": "Langage SQL - SGBD : MYSQL",
       "modules":[
@@ -144,13 +144,13 @@
         {
           "moduleId": 1,
           "moduleNom":"Algrithme",
-          "moduleImage":"",
+          "moduleImage":"../../images/algorithms.jpg",
           "moduleObjectif": "Commant creer un algrithme"
         },
         {
           "moduleId": 2,
           "moduleNom":"Langage C",
-          "moduleImage":"",
+          "moduleImage":"../../images/launguageC.jpg",
           "moduleObjectif": "Langage C avec project finale"
         }
       ]
@@ -165,174 +165,61 @@
         {
           "moduleId": 1,
           "moduleNom":"Fondements du Management",
-          "moduleImage":"",
+          "moduleImage":"../../images/management.jpg",
           "moduleObjectif": "Comprendre les principes fondamentaux du management, les styles de leadership et les fonctions de gestion."
         },
         {
           "moduleId": 2,
           "moduleNom":"Communication et Leadership",
+          "moduleImage":"../../images/management1.jpg",
           "moduleObjectif": "Améliorer les compétences de communication, renforcer le leadership et la prise de décision."
         },
         {
           "moduleId": 3,
           "moduleNom":"Gestion des Ressources Humaines",
-          "moduleImage":"",
+          "moduleImage":"../../images/management.jpg",
           "moduleObjectif": "Apprendre à recruter, motiver, et développer les compétences de l'équipe."
         },
         {
           "moduleId": 4,
           "moduleNom":"Gestion de Projet",
-          "moduleImage":"",
+          "moduleImage":"../../images/management1.jpg",
           "moduleObjectif": "Acquérir des compétences en planification, exécution, suivi et évaluation de projets."
         },
         {
           "moduleId": 5,
           "moduleNom":"Gestion de la Performance",
-          "moduleImage":"",
+          "moduleImage":"../../images/educationOnline2.jpg",
           "moduleObjectif": "Évaluer et améliorer la performance individuelle et organisationnelle."
         },
         {
           "moduleId": 6,
           "moduleNom":"Gestion du Changement",
-          "moduleImage":"",
+          "moduleImage":"../../images/management2.jpg",
           "moduleObjectif": "Comprendre les processus de changement, développer des compétences pour gérer les transitions et résoudre les résistances."
         },
         {
           "moduleId": 7,
           "moduleNom":"Éthique et Responsabilité Sociale",
-          "moduleImage":"",
+          "moduleImage":"../../images/burautique.jpg",
           "moduleObjectif": "Sensibiliser aux questions éthiques en affaires, promouvoir la responsabilité sociale des entreprises"
         },
         {
           "moduleId": 8,
           "moduleNom":"Innovation et Créativité",
-          "moduleImage":"",
+          "moduleImage":"../../images/burautique.jpg",
           "moduleObjectif": "Stimuler la pensée créative, favoriser l'innovation dans la gestion."
         },
         {
           "moduleId": 9,
           "moduleNom":"Gestion de la Qualité",
-          "moduleImage":"",
+          "moduleImage":"../../images/burautique.jpg",
           "moduleObjectif": "Assurer la qualité des produits ou services, mettre en œuvre des processus d'amélioration continue."
         }
       ]
     },
     {
       "idFormation": 8,
-      "titreformation":"Formation en Ressources Humaines",
-      "imageFormation": "../../images/management1.jpg",
-      "descriptionFormation": "Gestion Administrative  - Recrutement - Relations Sociales ",
-      "modules":
-      [
-        {
-          "moduleId": 1,
-          "moduleNom":"Gestion Administrative du Personnel",
-          "moduleImage":"",
-          "moduleObjectif": "Comprendre les procédures administratives liées aux ressources humaines, maîtriser la gestion des contrats, des absences, et des dossiers du personnel."
-        },
-        {
-          "moduleId": 2,
-          "moduleNom":"Recrutement et Sélection",
-          "moduleImage":"",
-          "moduleObjectif": "Acquérir les compétences pour mener des entretiens de recrutement, élaborer des descriptions de poste, utiliser des outils d'évaluation des candidats."
-        },
-        {
-          "moduleId": 3,
-          "moduleNom":"Formation et Développement des Compétences",
-          "moduleImage":"",
-          "moduleObjectif": "Concevoir et mettre en œuvre des programmes de formation, évaluer les besoins en développement des compétences, suivre l'évolution des compétences au sein de l'organisation."
-        },
-        {
-          "moduleId": 4,
-          "moduleNom":"Relations Sociales et Droit du Travail",
-          "moduleImage":"",
-          "moduleObjectif": "Comprendre les aspects juridiques liés au travail, gérer les relations avec les représentants du personnel, connaître les droits et devoirs des employeurs et des salariés."
-        },
-        {
-          "moduleId": 5,
-          "moduleNom":"Gestion de la Performance",
-          "moduleImage":"",
-          "moduleObjectif": "Élaborer des systèmes d'évaluation des performances, mettre en place des entretiens d'évaluation, développer des plans d'amélioration."
-        },
-        {
-          "moduleId": 6,
-          "moduleNom":"Gestion de la Diversité",
-          "moduleImage":"",
-          "moduleObjectif": "Sensibiliser à la diversité en milieu professionnel, promouvoir l'égalité des chances, gérer les enjeux liés à la diversité culturelle et sociale."
-        },
-        {
-          "moduleId": 7,
-          "moduleNom":"Santé et Bien-être au Travail",
-          "moduleImage":"",
-          "moduleObjectif": "Comprendre les enjeux liés à la santé mentale et physique des employés, développer des initiatives pour améliorer le bien-être au travail."
-        },
-        {
-          "moduleId": 8,
-          "moduleNom":"Systèmes d'Information RH (SIRH)",
-          "moduleImage":"",
-          "moduleObjectif": "Maîtriser l'utilisation des outils informatiques dédiés aux RH, optimiser les processus grâce aux systèmes d'information dédiés."
-        }
-      ]
-    },
-    {
-      "idFormation": 9,
-      "titreformation":"Formation en Marketing",
-      "imageFormation": "../../images/digitalMarketing1.jpg",
-      "descriptionFormation": "Fondements du Marketing  - Marketing Stratégique - Marketing Digital",
-      "modules":
-      [
-        {
-          "moduleId": 1,
-          "moduleNom":"Fondements du Marketing",
-          "moduleImage":"",
-          "moduleObjectif": "Comprendre les concepts de base du marketing, les principes de segmentation, ciblage et positionnement, ainsi que les éléments du mix marketing (les 4P : Produit, Prix, Place, Promotion)."
-        },
-        {
-          "moduleId": 2,
-          "moduleNom":"Études de Marché et Analyse de la Concurrence",
-          "moduleImage":"",
-          "moduleObjectif": "Acquérir des compétences dans la collecte et l'analyse de données de marché, comprendre les comportements des consommateurs, évaluer la concurrence."
-        },
-        {
-          "moduleId": 3,
-          "moduleNom":"Marketing Digital",
-          "moduleImage":"",
-          "moduleObjectif": "Maîtriser les stratégies de marketing en ligne, incluant la gestion des médias sociaux, le référencement (SEO), le marketing par e-mail et la publicité en ligne."
-        },
-        {
-          "moduleId": 4,
-          "moduleNom":"Marketing Stratégique",
-          "moduleImage":"",
-          "moduleObjectif": "Développer des compétences dans la planification stratégique marketing, la définition des objectifs, la segmentation stratégique, et la création de propositions de valeur."
-        },
-        {
-          "moduleId": 5,
-          "moduleNom":"Communication Marketing",
-          "moduleImage":"",
-          "moduleObjectif": "Apprendre à concevoir des messages marketing efficaces, élaborer des campagnes publicitaires, gérer la communication de marque."
-        },
-        {
-          "moduleId": 6,
-          "moduleNom":"Gestion de la Relation Client (CRM)",
-          "moduleImage":"",
-          "moduleObjectif": "Comprendre l'importance de la relation client, maîtriser les outils de gestion de la relation client, améliorer la satisfaction client et la fidélisation."
-        },
-        {
-          "moduleId": 7,
-          "moduleNom":"Analyse de Performance et KPIs",
-          "moduleImage":"",
-          "moduleObjectif": "Savoir mesurer et évaluer les performances des campagnes marketing, utiliser des indicateurs clés de performance (KPIs) pour optimiser les résultats."
-        },
-        {
-          "moduleId": 8,
-          "moduleNom":"Marketing Éthique et Responsabilité Sociale",
-          "moduleImage":"",
-          "moduleObjectif": "Sensibiliser aux enjeux éthiques du marketing, intégrer des pratiques responsables dans les stratégies marketing, gérer la réputation de l'entreprise."
-        }
-      ]
-    },
-    {
-      "idFormation": 10,
       "titreformation":"Formation comptabilité Générale",
       "imageFormation": "../../images/management.jpg",
       "descriptionFormation": "Formation comptabilité Générale  - Marketing Stratégique - Marketing Digital",
@@ -341,31 +228,31 @@
         {
           "moduleId": 1,
           "moduleNom":"Formation comptabilité Générale",
-          "moduleImage":"",
+          "moduleImage":"../../images/management.jpg",
           "moduleObjectif": "Comprendre les principes de base de la comptabilité, la structure des états financiers, et les normes comptables."
         },
         {
           "moduleId": 2,
           "moduleNom":"Enregistrement des Opérations Comptables",
-          "moduleImage":"",
+          "moduleImage":"../../images/analyze2.jpg",
           "moduleObjectif": "Acquérir des compétences dans la saisie des transactions courantes, la tenue des journaux et des grands livres."
         },
         {
           "moduleId": 3,
           "moduleNom":"Principes de la Comptabilité Générale",
-          "moduleImage":"",
+          "moduleImage":"../../images/analyze1.jpg",
           "moduleObjectif": "Approfondir la compréhension des principes comptables tels que la partie double, la constatation des revenus et des charges, la dépréciation des actifs, etc."
         },
         {
           "moduleId": 4,
           "moduleNom":"Élaboration des États Financiers",
-          "moduleImage":"",
+          "moduleImage":"../../images/analyze2.jpg",
           "moduleObjectif": "Apprendre à préparer les états financiers tels que le bilan, le compte de résultat, et le tableau de flux de trésorerie."
         }
       ]
     },
     {
-      "idFormation": 11,
+      "idFormation": 9,
       "titreformation":"Formation Comptabilité analytique",
       "imageFormation": "../../images/management.jpg",
       "descriptionFormation": "Formation comptabilité Générale  - Marketing Stratégique - Marketing Digital",
@@ -374,26 +261,248 @@
         {
           "moduleId": 1,
           "moduleNom":"Fondements de la Comptabilité Analytique",
-          "moduleImage":"",
+          "moduleImage":"../../images/analyze3.jpg",
           "moduleObjectif": "Comprendre les principes fondamentaux de la comptabilité analytique, distinguer entre la comptabilité générale et la comptabilité analytique."
         },
         {
           "moduleId": 2,
           "moduleNom":"Méthodes de Calcul des Coûts",
-          "moduleImage":"",
+          "moduleImage":"../../images/analyze1.jpg",
           "moduleObjectif": "Acquérir des compétences dans les méthodes de calcul des coûts, y compris le coût complet, le coût variable, et les méthodes par activité."
         },
         {
           "moduleId": 3,
           "moduleNom":"Systèmes de Gestion des Coûts",
-          "moduleImage":"",
+          "moduleImage":"../../images/analyze2.jpg",
           "moduleObjectif": "Apprendre à concevoir et mettre en œuvre des systèmes de gestion des coûts adaptés à différents types d'entreprises."
         },
         {
           "moduleId": 4,
           "moduleNom":"Analyse des Coûts et Marges",
-          "moduleImage":"",
+          "moduleImage":"../../images/analyze3.jpg",
           "moduleObjectif": "Savoir analyser les coûts de production, comprendre les marges bénéficiaires, identifier les points critiques et les leviers d'amélioration."
+        }
+      ]
+    },
+    {
+      "idFormation": 10,
+      "titreformation":"Formation en Ressources Humaines",
+      "imageFormation": "../../images/management1.jpg",
+      "descriptionFormation": "Gestion Administrative  - Recrutement - Relations Sociales ",
+      "modules":
+      [
+        {
+          "moduleId": 1,
+          "moduleNom":"Gestion Administrative du Personnel",
+          "moduleImage":"../../images/management2.jpg",
+          "moduleObjectif": "Comprendre les procédures administratives liées aux ressources humaines, maîtriser la gestion des contrats, des absences, et des dossiers du personnel."
+        },
+        {
+          "moduleId": 2,
+          "moduleNom":"Recrutement et Sélection",
+          "moduleImage":"../../images/management1.jpg",
+          "moduleObjectif": "Acquérir les compétences pour mener des entretiens de recrutement, élaborer des descriptions de poste, utiliser des outils d'évaluation des candidats."
+        },
+        {
+          "moduleId": 3,
+          "moduleNom":"Formation et Développement des Compétences",
+          "moduleImage":"../../images/management.jpg",
+          "moduleObjectif": "Concevoir et mettre en œuvre des programmes de formation, évaluer les besoins en développement des compétences, suivre l'évolution des compétences au sein de l'organisation."
+        },
+        {
+          "moduleId": 4,
+          "moduleNom":"Relations Sociales et Droit du Travail",
+          "moduleImage":"../../images/management1.jpg",
+          "moduleObjectif": "Comprendre les aspects juridiques liés au travail, gérer les relations avec les représentants du personnel, connaître les droits et devoirs des employeurs et des salariés."
+        },
+        {
+          "moduleId": 5,
+          "moduleNom":"Gestion de la Performance",
+          "moduleImage":"../../images/management2.jpg",
+          "moduleObjectif": "Élaborer des systèmes d'évaluation des performances, mettre en place des entretiens d'évaluation, développer des plans d'amélioration."
+        },
+        {
+          "moduleId": 6,
+          "moduleNom":"Gestion de la Diversité",
+          "moduleImage":"../../images/management1.jpg",
+          "moduleObjectif": "Sensibiliser à la diversité en milieu professionnel, promouvoir l'égalité des chances, gérer les enjeux liés à la diversité culturelle et sociale."
+        },
+        {
+          "moduleId": 7,
+          "moduleNom":"Santé et Bien-être au Travail",
+          "moduleImage":"../../images/management2.jpg",
+          "moduleObjectif": "Comprendre les enjeux liés à la santé mentale et physique des employés, développer des initiatives pour améliorer le bien-être au travail."
+        },
+        {
+          "moduleId": 8,
+          "moduleNom":"Systèmes d'Information RH (SIRH)",
+          "moduleImage":"../../images/management1.jpg",
+          "moduleObjectif": "Maîtriser l'utilisation des outils informatiques dédiés aux RH, optimiser les processus grâce aux systèmes d'information dédiés."
+        }
+      ]
+    },
+    {
+      "idFormation": 11,
+      "titreformation":"Formation en Marketing",
+      "imageFormation": "../../images/digitalMarketing1.jpg",
+      "descriptionFormation": "Fondements du Marketing  - Marketing Stratégique - Marketing Digital",
+      "modules":
+      [
+        {
+          "moduleId": 1,
+          "moduleNom":"Fondements du Marketing",
+          "moduleImage":"../../images/digitalMarketing.jpg",
+          "moduleObjectif": "Comprendre les concepts de base du marketing, les principes de segmentation, ciblage et positionnement, ainsi que les éléments du mix marketing (les 4P : Produit, Prix, Place, Promotion)."
+        },
+        {
+          "moduleId": 2,
+          "moduleNom":"Études de Marché et Analyse de la Concurrence",
+          "moduleImage":"../../images/digitalMarketing1.jpg",
+          "moduleObjectif": "Acquérir des compétences dans la collecte et l'analyse de données de marché, comprendre les comportements des consommateurs, évaluer la concurrence."
+        },
+        {
+          "moduleId": 3,
+          "moduleNom":"Marketing Digital",
+          "moduleImage":"../../images/digitalMarketing1.jpg",
+          "moduleObjectif": "Maîtriser les stratégies de marketing en ligne, incluant la gestion des médias sociaux, le référencement (SEO), le marketing par e-mail et la publicité en ligne."
+        },
+        {
+          "moduleId": 4,
+          "moduleNom":"Marketing Stratégique",
+          "moduleImage":"../../images/digitalMarketing.jpg",
+          "moduleObjectif": "Développer des compétences dans la planification stratégique marketing, la définition des objectifs, la segmentation stratégique, et la création de propositions de valeur."
+        },
+        {
+          "moduleId": 5,
+          "moduleNom":"Communication Marketing",
+          "moduleImage":"../../images/management1.jpg",
+          "moduleObjectif": "Apprendre à concevoir des messages marketing efficaces, élaborer des campagnes publicitaires, gérer la communication de marque."
+        },
+        {
+          "moduleId": 6,
+          "moduleNom":"Gestion de la Relation Client (CRM)",
+          "moduleImage":"../../images/digitalMarketing.jpg",
+          "moduleObjectif": "Comprendre l'importance de la relation client, maîtriser les outils de gestion de la relation client, améliorer la satisfaction client et la fidélisation."
+        },
+        {
+          "moduleId": 7,
+          "moduleNom":"Analyse de Performance et KPIs",
+          "moduleImage":"../../images/digitalMarketing.jpg",
+          "moduleObjectif": "Savoir mesurer et évaluer les performances des campagnes marketing, utiliser des indicateurs clés de performance (KPIs) pour optimiser les résultats."
+        },
+        {
+          "moduleId": 8,
+          "moduleNom":"Marketing Éthique et Responsabilité Sociale",
+          "moduleImage":"../../images/management1.jpg",
+          "moduleObjectif": "Sensibiliser aux enjeux éthiques du marketing, intégrer des pratiques responsables dans les stratégies marketing, gérer la réputation de l'entreprise."
+        }
+      ]
+    },
+    {
+      "idFormation": 12,
+      "titreformation":"Language - Francais",
+      "imageFormation": "../../images/francais.jpg",
+      "descriptionFormation": "Basic  - communication - Grammaire",
+      "modules":
+      [
+        {
+          "moduleId": 1,
+          "moduleNom":"Basic",
+          "moduleImage":"../../images/francais.jpg",
+          "moduleObjectif": "Aquerir la base de langue francais"
+        },
+        {
+          "moduleId": 2,
+          "moduleNom":"communication",
+          "moduleImage":"../../images/communication.jpg",
+          "moduleObjectif": "Aquerir la base de communication"
+        },
+        {
+          "moduleId": 3,
+          "moduleNom":"Grammaire",
+          "moduleImage":"../../images/grammaire.jpg",
+          "moduleObjectif": "Aquerir la base de Grammaire"
+        }
+      ]
+    },
+    {
+      "idFormation": 12,
+      "titreformation":"Language - Englais",
+      "imageFormation": "../../images/englais.jpg",
+      "descriptionFormation": "Basic  - communication - Grammaire",
+      "modules":
+      [
+        {
+          "moduleId": 1,
+          "moduleNom":"Basic",
+          "moduleImage":"../../images/englais.jpg",
+          "moduleObjectif": "Aquerir la base de langue Englais"
+        },
+        {
+          "moduleId": 2,
+          "moduleNom":"communication",
+          "moduleImage":"../../images/communication.jpg",
+          "moduleObjectif": "Aquerir la base de communication"
+        },
+        {
+          "moduleId": 3,
+          "moduleNom":"Grammaire",
+          "moduleImage":"../../images/grammaire.jpg",
+          "moduleObjectif": "Aquerir la base de Grammaire"
+        }
+      ]
+    },
+    {
+      "idFormation": 13,
+      "titreformation":"Language - Englais",
+      "imageFormation": "../../images/englais.jpg",
+      "descriptionFormation": "Avancer  - communication-Avancer - Grammaire-Avancer",
+      "modules":
+      [
+        {
+          "moduleId": 1,
+          "moduleNom":"Avancer",
+          "moduleImage":"../../images/englais.jpg",
+          "moduleObjectif": "Aquerir un haut niveau dans la langue Englais"
+        },
+        {
+          "moduleId": 2,
+          "moduleNom":"communication-Avancer",
+          "moduleImage":"../../images/communication.jpg",
+          "moduleObjectif": "Aquerir un haut niveau dans communication"
+        },
+        {
+          "moduleId": 3,
+          "moduleNom":"Grammaire-Avancer",
+          "moduleImage":"../../images/grammaire.jpg",
+          "moduleObjectif": "Aquerir un haut niveau dans Grammaire"
+        }
+      ]
+    },
+    {
+      "idFormation": 14,
+      "titreformation":"Language - Francais",
+      "imageFormation": "../../images/francais.jpg",
+      "descriptionFormation": "Avancer  - communication-Avancer - Grammaire-Avancer",
+      "modules":
+      [
+        {
+          "moduleId": 1,
+          "moduleNom":"Avancer",
+          "moduleImage":"../../images/francais.jpg",
+          "moduleObjectif": "Aquerir un haut niveau dans langue francais"
+        },
+        {
+          "moduleId": 2,
+          "moduleNom":"communication-Avancer",
+          "moduleImage":"../../images/communication.jpg",
+          "moduleObjectif": "Aquerir un haut niveau dans la communication"
+        },
+        {
+          "moduleId": 3,
+          "moduleNom":"Grammaire-Avancer",
+          "moduleImage":"../../images/grammaire.jpg",
+          "moduleObjectif": "Aquerir un haut niveau dans la Grammaire"
         }
       ]
     }

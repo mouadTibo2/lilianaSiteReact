@@ -58,7 +58,7 @@ function ReservationCart() {
 
   return (
     <Container className="p-4">
-      <Row className="justify-content-center my-2">
+      <Row className="justify-content-center">
         <Col lg={12} className="text-center mt-3">
           <h1>Resevation online</h1>
         </Col>

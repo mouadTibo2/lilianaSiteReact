@@ -34,7 +34,7 @@ export default function NavBar() {
             <img
               src={logo}
               width="170"
-              height="90"
+              height="50"
               className="d-inline-block align-top "
               alt="React Bootstrap logo"
             />

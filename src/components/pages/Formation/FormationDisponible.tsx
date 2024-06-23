@@ -9,6 +9,7 @@ import formationData from "../../Data/formationData.json";
 import Modal from 'react-bootstrap/Modal';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
+import Nav from 'react-bootstrap/Nav';
 import { useState } from 'react';
 
 function FormationDisponible() {
@@ -28,7 +29,7 @@ function FormationDisponible() {
         <Col md={5} className='p-4 customHeight'>
           <img src={item.moduleImage} width="100%" height="100%" className="rounded" alt="" />
         </Col>
-        <Col md={6} className='customHeight'>
+        <Col md={6} className='p-4 customHeight'>
           <div className="d-flex flex-column">
             <h3>
               {item.moduleNom}
@@ -54,15 +55,17 @@ function FormationDisponible() {
           </div>
         </div>
         <Card.Body>
-          <Card.Title className="mb-2 text-center fs-4">{item.titreformation}</Card.Title>
-          <Card.Subtitle className="mb-2 text-muted text-center fs-3"></Card.Subtitle>
-          <Card.Text className="mb-2 text-muted text-center">
+          <Card.Title className="mb-1 text-center fs-4">{item.titreformation}</Card.Title>
+          <Card.Subtitle className="mb-1 text-muted text-center fs-3"></Card.Subtitle>
+          <Card.Text className="mb-1 text-muted text-center">
           {item.descriptionFormation}
           </Card.Text>
-          <div className="d-flex justify-content-end">
+          <div className="d-flex justify-content-center">
             <Button size="sm" variant="outline-success">
-              contacter-Nous 
-              <span className="ms-3"><img src={whatupImage}/></span>
+              <Nav.Link href="https://api.whatsapp.com/send?phone=+212632001896&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Varela%202.">
+                contacter-Nous
+                <span className="ms-3"><img src={whatupImage}/></span>
+              </Nav.Link>
             </Button>
           </div>
         </Card.Body>

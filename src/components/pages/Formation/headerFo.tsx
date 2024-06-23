@@ -1,4 +1,4 @@
-import imageHeaderFormation from "/public/images/formationContinue.jfif"
+import imageHeaderFormation from "../../../../public/images/educationOnline2.jpg"
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import { CSSProperties } from "react";

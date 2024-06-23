@@ -33,7 +33,7 @@ export default function CatalogueFooter(){
     
     return (
       <Container>
-        <Row className='justify-content-center align-items-center'>
+        <Row className=''>
           {sixImages}
           {btnAnnulerCataloge ? 
           <div className="position-relative">
