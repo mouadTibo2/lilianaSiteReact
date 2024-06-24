@@ -10,15 +10,29 @@ import telephone from "/public/images/telephone-fill.svg";
 import location from "/public/images/geo-alt-fill.svg";
 import email from "/public/images/envelope-at-fill.svg";
 import CatalogueFooter from "../cataloge/CatalogueFooter";
+import AOS from 'aos';
+import { useEffect } from "react";
+
 export default function Footer() {
+  useEffect(() => {
+    AOS.init({
+      offset: 190,
+      duration: 600,
+      easing: 'ease-in-sine',
+      delay: 100,
+    });
+  }, [])
   return (
     <>
       <Container
         fluid
         className="text-light px-1 py-3"
+        data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom"
         style={{ backgroundColor: "#78ABA8" }}
       >
-        <Container>
+        <Container
+        >
           <Row className="gap-3">
             <Col lg={3} className="text-start">
               <h4 className="fw-bold text-dark">Menu</h4>

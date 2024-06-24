@@ -93,7 +93,7 @@ const handleCommentaire = (commentaire:string) => {
           validated={validated}
           onSubmit={(e) => handleSubmit(e)}
         >
-            <Row className="justify-content-center mb-4">
+            <Row className="justify-content-center mb-4" data-aos="fade-right">
               <Col md={6} className="mt-3">
                 <Form.Label>Nom</Form.Label>
                 <Form.Control type="text" placeholder="Nom" value={inscriptiontData.nom} onChange={(e) => handleNom(e.currentTarget.value)} required />

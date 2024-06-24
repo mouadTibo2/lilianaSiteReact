@@ -54,7 +54,7 @@ export default function Contact() {
             <h1 className=" ">Contact</h1>
         </div>
       </div>
-      <Container fluid="xxl" className="w-75 vh-100 mt-5">
+      <Container fluid="xxl" className="w-75 vh-100 mt-5" data-aos="fade-right">
         <Form
           noValidate
           validated={validated}

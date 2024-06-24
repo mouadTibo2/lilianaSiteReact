@@ -40,7 +40,7 @@ const CatalogeBody = () => {
             </Button>
           </div>
             <div className="position-relative">
-            <Col md={5} className='cataloguepositionAboveTop customHeight'>
+            <Col md={5} className='cataloguepositionAboveTop customHeight' data-aos="zoom-in">
               <div className="d-flex justify-content-center align-items-center">
                 <Image src={imageClicked.imagePath}  width="40%" className='img-fluid imgWidth' rounded key={imageClicked.id}/>
               </div>

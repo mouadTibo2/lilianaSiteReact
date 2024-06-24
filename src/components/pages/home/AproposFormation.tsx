@@ -7,14 +7,24 @@ import "../Formation/styleFormation.css";
 import image1 from "/public/images/management.jpg";
 import Nav from 'react-bootstrap/Nav';
 import { Link } from "react-router-dom";
+import AOS from 'aos';
+import { useEffect } from "react";
 
 const AproposFormation = () => {
+  useEffect(() => {
+    AOS.init({
+      offset: 190,
+      duration: 600,
+      easing: 'ease-in-sine',
+      delay: 100,
+    });
+  }, [0])
   return (
     <Row className='gap-5 my-5'>
           <h1>Notre formation</h1>
           <Col lg={12}>
-            <Row>
-              <Col sm={12} md={4}  className='mb-3 text-light packhovered' >
+            <Row >
+              <Col sm={12} md={4}  className='mb-3 text-light packhovered' data-aos="flip-left">
                 <Card style={{ width: '100%' ,height:"100%"}}>
                   <div className="position-realtive">
                     <img className="img-fluid scaleImg rounded"  src={image1} alt=""/>
@@ -46,7 +56,7 @@ const AproposFormation = () => {
                 </div>
                 </Card>
               </Col>
-              <Col sm={12} md={4}  className='mb-3 text-light packhovered' >
+              <Col sm={12} md={4}  className='mb-3 text-light packhovered' data-aos="flip-left" >
                 <Card style={{ width: '100%' ,height:"100%"}}>
                   <div className="position-realtive">
                     <img className="img-fluid scaleImg rounded"  src={image1} alt=""/>
@@ -78,7 +88,7 @@ const AproposFormation = () => {
                 </div>
                 </Card>
               </Col>
-              <Col sm={12} md={4}  className='mb-3 text-light packhovered' >
+              <Col sm={12} md={4}  className='mb-3 text-light packhovered' data-aos="flip-left">
                 <Card style={{ width: '100%' ,height:"100%"}}>
                   <div className="position-realtive">
                     <img className="img-fluid scaleImg rounded"  src={image1} alt=""/>

@@ -7,16 +7,26 @@ import imageJeune from '/public/images/imagePourlesJeune.jpg'
 import imagechercheur from '/public/images/imagePourleschercheur.jpg'
 import { CSSProperties } from 'react';
 import AproposFormation from './AproposFormation';
+import AOS from 'aos';
+import { useEffect } from "react";
+
 export default function Apropos(){
   const imagesStyle : CSSProperties ={
     height: "70vh",
-
   }
+  useEffect(() => {
+    AOS.init({
+      offset: 190,
+      duration: 600,
+      easing: 'ease-in-sine',
+      delay: 100,
+    });
+  }, [])
   return (
     <>
       <div>
-      <Row className='my-5 gap-5'>
-          <Col md={5}>
+      <Row className='my-5 gap-5' data-aos="fade-right">
+          <Col md={5} >
             <img src={imageSalirie} className="img-fluid" style={imagesStyle}alt="" />
           </Col>
           <Col md={6}>
@@ -36,7 +46,7 @@ export default function Apropos(){
             </div>
           </Col>
       </Row>
-      <Row className='gap-5 my-5'>
+      <Row className='gap-5 my-5' data-aos="fade-right">
         <Col md={6}>
           <div className="d-flex flex-column justify-content-between w-100 h-100">
           <h1>Formation des Chercheur d'emploi</h1>
@@ -57,7 +67,7 @@ export default function Apropos(){
           <img src={imagechercheur} className="img-fluid" style={imagesStyle}alt="" />
         </Col>
       </Row>
-      <Row className='gap-5 my-5'>
+      <Row className='gap-5 my-5' data-aos="fade-right">
         <Col md={5}>
           <img src={imageJeune} className="img-fluid" style={imagesStyle} alt="" />
         </Col>

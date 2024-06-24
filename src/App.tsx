@@ -12,6 +12,8 @@ import Reserv from "./components/Resevation/Reserv";
 import { Suspense } from 'react';
 import ModalCover from "./components/pages/ModalFormationContent/ModalCover";
 
+import 'aos/dist/aos.css';
+
 
 export interface langueValue {
   langue:string,
@@ -19,7 +21,6 @@ export interface langueValue {
 }  
 
 function App() {
-  
   return (
     <>
     <Suspense fallback="loading">
