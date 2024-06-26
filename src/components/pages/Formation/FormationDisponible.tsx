@@ -62,7 +62,7 @@ function FormationDisponible() {
           </Card.Text>
           <div className="d-flex justify-content-center">
             <Button size="sm" variant="outline-success">
-              <Nav.Link href="https://api.whatsapp.com/send?phone=+212632001896&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Varela%202.">
+              <Nav.Link target="_blank" href="https://api.whatsapp.com/send?phone=+212632001896&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Varela%202.">
                 contacter-Nous
                 <span className="ms-3"><img src={whatupImage}/></span>
               </Nav.Link>

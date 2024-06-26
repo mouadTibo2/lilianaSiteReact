@@ -1,0 +1,52 @@
+.inscrptionPosition{
+    position: absolute;
+    top: 25%;
+    text-align: center;
+    left: 15%;
+    font-weight: bolder;
+}
+.imginscription{
+    z-index: -1;
+    opacity: 75%;
+}
+.contactposition{
+    position: absolute;
+    top: 30%;
+    left: 37%;
+}
+@media (min-width: 576px) { 
+    .inscrptionPosition{
+        position: absolute;
+        top: 25%;
+        text-align: center;
+        left: 35%;
+        font-weight: bolder;
+    }
+    .imginscription{
+        z-index: -1;
+        opacity: 75%;
+    }
+    .contactposition{
+        position: absolute;
+        top: 25%;
+        left: 45%;
+    }
+   }
+   @media (min-width: 992px) { 
+    .inscrptionPosition{
+        position: absolute;
+        top: 25%;
+        text-align: center;
+        left: 35%;
+        font-weight: bolder;
+    }
+    .imginscription{
+        z-index: -1;
+        opacity: 75%;
+    }
+    .contactposition{
+        position: absolute;
+        top: 25%;
+        left: 45%;
+    }
+   }

@@ -400,7 +400,7 @@
     },
     {
       "idFormation": 12,
-      "titreformation":"Language - Francais",
+      "titreformation":"Language - Francais - Basic",
       "imageFormation": "../../images/francais.jpg",
       "descriptionFormation": "Basic  - communication - Grammaire",
       "modules":
@@ -426,8 +426,8 @@
       ]
     },
     {
-      "idFormation": 12,
-      "titreformation":"Language - Englais",
+      "idFormation": 13,
+      "titreformation":"Language - Englais - Basic",
       "imageFormation": "../../images/englais.jpg",
       "descriptionFormation": "Basic  - communication - Grammaire",
       "modules":
@@ -453,8 +453,8 @@
       ]
     },
     {
-      "idFormation": 13,
-      "titreformation":"Language - Englais",
+      "idFormation": 14,
+      "titreformation":"Language - Englais - Avancer",
       "imageFormation": "../../images/englais.jpg",
       "descriptionFormation": "Avancer  - communication-Avancer - Grammaire-Avancer",
       "modules":
@@ -480,8 +480,8 @@
       ]
     },
     {
-      "idFormation": 14,
-      "titreformation":"Language - Francais",
+      "idFormation": 15,
+      "titreformation":"Language - Francais - Avancer",
       "imageFormation": "../../images/francais.jpg",
       "descriptionFormation": "Avancer  - communication-Avancer - Grammaire-Avancer",
       "modules":

@@ -30,13 +30,13 @@ export default function TopNavBar() {
         </Col>
         <Col md={4}>
           <div className="d-flex w-100 gap-2 justify-content-around p-2">
-            <a href="https://api.whatsapp.com/send?phone=+212632001896&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Varela%202.">
+            <a target="_blank" href="https://api.whatsapp.com/send?phone=+212632001896&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Varela%202.">
               <img src={whatupImage} alt="whatupImage" className="mx-1" />
             </a>
-            <a href="https://www.facebook.com/LilianaDev">
+            <a target="_blank" href="https://www.facebook.com/LilianaDev">
               <img src={facebookImage} alt="facebookImage" className="mx-1" />
             </a>
-            <a href="https://www.instagram.com/online_institut9?igsh=MWRvMHk2b3lmMTUzbA==">
+            <a target="_blank" href="https://www.instagram.com/online_institut9?igsh=MWRvMHk2b3lmMTUzbA==">
               <img src={instagramImage} alt="instagramImage" className="mx-1" />
             </a>
           </div>

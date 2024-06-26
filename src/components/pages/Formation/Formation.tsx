@@ -7,7 +7,6 @@ export default function Formation(){
   return (
     <>
       <Header/>
-
       <Body/>
       <Footer/>
     </>

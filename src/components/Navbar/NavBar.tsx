@@ -33,9 +33,9 @@ export default function NavBar() {
           <Navbar.Brand to="/" as={NavLink} className="ms-2">
             <img
               src={logo}
-              width="170"
-              height="50"
-              className="d-inline-block align-top "
+              width="190"
+              height="70"
+              className=""
               alt="React Bootstrap logo"
             />
           </Navbar.Brand>
@@ -44,9 +44,6 @@ export default function NavBar() {
             <Nav className="ms-auto">
               <Nav.Link to="/" as={NavLink}>
                 {t("acceuil")}
-              </Nav.Link>
-              <Nav.Link to="/" as={NavLink}>
-                {t("apropos")}
               </Nav.Link>
               <Nav.Link to="/Formation" as={NavLink}>
                 {t("formation")}

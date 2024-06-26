@@ -1,28 +1,39 @@
 import Footer from "../home/Footer";
 import { CSSProperties } from "react";
 import CatalogeBody from "./CatalogeBody";
-export default function Cataloge(){
-  const styleImage: CSSProperties ={
-    width:"100%",
-    height:"61vh"
-  }
+
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
+import bgCatalogue from "../../../../public/images/bgCatalogue.jpg";
+export default function Cataloge() {
+  const styleImage: CSSProperties = {
+    width: "100%",
+    height: "61vh",
+  };
+  const styleContent: CSSProperties = {
+    marginTop: "100px",
+  };
   return (
-    
     <>
-      <div className="position-relative" style={styleImage}>
-        <div className="bg-primary opacity-50 position-absolute" style={styleImage}>
-          <div className="bg-dark opacity-75 position-absolute" style={styleImage}>
-          </div>
-        </div>
-        <div className="d-flex justify-content-center align-items-center position-absolute top-50 start-50 translate-middle" style={styleImage}>
-          <h1 className=" ">Catalogue</h1>
-        </div>
+      <div className="position-relative w-100">
+        <div className="position-absolute" style={styleImage}></div>
+        <img
+          className="w-100 vh-100 img-fluid opacity-75"
+          src={bgCatalogue}
+          alt=""
+          style={styleImage}
+        />
+        <Row className="contactposition" style={styleContent}>
+          <Col sm={12} className="">
+            <h1>Catalogue</h1>
+          </Col>
+        </Row>
       </div>
-      <div>
-      <h1 className='my-3 text-center text-secondary'>Notre Catalogue</h1>
-        <CatalogeBody/>
-        </div>
-      <Footer/>
+
+      <h1 className="my-3 text-center text-secondary">Notre Catalogue</h1>
+      <CatalogeBody />
+
+      <Footer />
     </>
-  )
+  );
 }

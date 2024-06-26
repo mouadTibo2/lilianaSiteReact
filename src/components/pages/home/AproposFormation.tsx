@@ -14,7 +14,7 @@ const AproposFormation = () => {
   useEffect(() => {
     AOS.init({
       offset: 190,
-      duration: 600,
+      duration: 200,
       easing: 'ease-in-sine',
       delay: 100,
     });

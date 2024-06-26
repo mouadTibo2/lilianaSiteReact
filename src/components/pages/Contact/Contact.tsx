@@ -6,54 +6,69 @@ import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import { useState } from "react";
 import { CSSProperties } from "react";
-
+import imageContact from "../../../../public/images/contactUs.jpg";
 interface ContactData {
-  nom: string, 
-  email: string, 
-  numeroTelephone: string, 
-  commentaire:string,
+  nom: string;
+  email: string;
+  numeroTelephone: string;
+  commentaire: string;
 }
 export default function Contact() {
-  const styleImage: CSSProperties ={
-    width:"100%",
-    height:"61vh"
-  }
+  const styleImage: CSSProperties = {
+    width: "100%",
+    height: "61vh",
+  };
+  const styleContent: CSSProperties = {
+    marginTop: "100px",
+  };
 
   const [validated, setValidated] = useState(false);
-  const [contactData, setContactData] = useState<ContactData>({nom:"", email:"", numeroTelephone:"", commentaire:""});
-  
-  const handleNom = (nom:string) => {
+  const [contactData, setContactData] = useState<ContactData>({
+    nom: "",
+    email: "",
+    numeroTelephone: "",
+    commentaire: "",
+  });
+
+  const handleNom = (nom: string) => {
     nom = nom.trim();
-    setContactData({...contactData, nom : nom});
+    setContactData({ ...contactData, nom: nom });
   };
-  const handleEmail = (email:string) => {
+  const handleEmail = (email: string) => {
     email = email.trim();
-    setContactData({...contactData, email : email});
+    setContactData({ ...contactData, email: email });
   };
-  const handleNumeroTelephone = (numeroTelephone:string) => {
+  const handleNumeroTelephone = (numeroTelephone: string) => {
     numeroTelephone = numeroTelephone.trim();
-    setContactData({...contactData, numeroTelephone : numeroTelephone});
+    setContactData({ ...contactData, numeroTelephone: numeroTelephone });
   };
-  const handleCommentaire = (commentaire:string) => {
-     commentaire = commentaire;
-    setContactData({...contactData, commentaire : commentaire});
+  const handleCommentaire = (commentaire: string) => {
+    commentaire = commentaire;
+    setContactData({ ...contactData, commentaire: commentaire });
   };
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setValidated(true);
   };
   /* console.log(contactData); */
+
   return (
     <>
-      <div className="position-relative" style={styleImage}>
-        <div className="bg-primary opacity-50 position-absolute" style={styleImage}>
-          <div className="bg-dark opacity-75 position-absolute" style={styleImage}>
-          </div>
-        </div>
-        <div className="d-flex justify-content-center align-items-center position-absolute top-50 start-50 translate-middle" style={styleImage}>
-            <h1 className=" ">Contact</h1>
-        </div>
+      <div className="position-relative w-100">
+        <div className="position-absolute" style={styleImage}></div>
+        <img
+          className="w-100 vh-100 img-fluid imginscription"
+          src={imageContact}
+          alt=""
+          style={styleImage}
+        />
+        <Row className="contactposition" style={styleContent}>
+          <Col sm={12} className="">
+            <h1>Contact</h1>
+          </Col>
+        </Row>
       </div>
+
       <Container fluid="xxl" className="w-75 vh-100 mt-5" data-aos="fade-right">
         <Form
           noValidate
@@ -63,7 +78,13 @@ export default function Contact() {
           <Row className="justify-content-center mb-4">
             <Col md={6} className="mt-3">
               <Form.Label>Nom</Form.Label>
-              <Form.Control type="text" placeholder="Nom" value={contactData.nom} onChange={(e) => handleNom(e.currentTarget.value)} required />
+              <Form.Control
+                type="text"
+                placeholder="Nom"
+                value={contactData.nom}
+                onChange={(e) => handleNom(e.currentTarget.value)}
+                required
+              />
             </Col>
             <Col md={6} className="mt-3">
               <Form.Label>Email address</Form.Label>

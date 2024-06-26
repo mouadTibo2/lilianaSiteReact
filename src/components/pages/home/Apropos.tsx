@@ -17,7 +17,7 @@ export default function Apropos(){
   useEffect(() => {
     AOS.init({
       offset: 190,
-      duration: 600,
+      duration: 350,
       easing: 'ease-in-sine',
       delay: 100,
     });

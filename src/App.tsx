@@ -11,7 +11,7 @@ import Apropos from "./components/pages/home/Apropos";
 import Reserv from "./components/Resevation/Reserv";
 import { Suspense } from 'react';
 import ModalCover from "./components/pages/ModalFormationContent/ModalCover";
-
+import "./App.css"
 import 'aos/dist/aos.css';
 
 
@@ -34,7 +34,6 @@ function App() {
           <ModalCover/>
         <Routes>
           <Route path="/" element={<Acceuil/>}/>
-          <Route path="/Apropos" element={<Apropos/>}/>
           <Route path="/Formation" element={<Formation/>}/>
           <Route path="/Cataloge" element={<Cataloge/>}/>
           <Route path="/Contact" element={<Contact/>}/>

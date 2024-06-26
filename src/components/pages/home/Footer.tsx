@@ -98,17 +98,17 @@ export default function Footer() {
                 <p className="m-1">onlineinstituts23@gmail.com</p>
               </div>
               <div className="mt-2 d-flex w-100 justify-content-around">
-                <a href="https://api.whatsapp.com/send?phone=+212632001896&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Varela%202.">
+                <a target="_blank" href="https://api.whatsapp.com/send?phone=+212632001896&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Varela%202.">
                   <img src={whatupImage} alt="whatupImage" className="me-1" />
                 </a>
-                <a href="https://www.facebook.com/LilianaDev">
+                <a target="_blank" href="https://www.facebook.com/LilianaDev">
                   <img
                     src={facebookImage}
                     alt="facebookImage"
                     className="me-1"
                   />
                 </a>
-                <a href="https://www.instagram.com/online_institut9?igsh=MWRvMHk2b3lmMTUzbA==">
+                <a target="_blank" href="https://www.instagram.com/online_institut9?igsh=MWRvMHk2b3lmMTUzbA==">
                   <img
                     src={instagramImage}
                     alt="instagramImage"
@@ -118,7 +118,7 @@ export default function Footer() {
               </div>
             </Col>
             <Col lg={3} className="text-start">
-              <h4 className="fw-bold text-dark mb-3">Cataloge</h4>
+              <h4 className="fw-bold text-dark mb-3">Catalogue</h4>
               <CatalogueFooter />
             </Col>
           </Row>
