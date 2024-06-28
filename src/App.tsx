@@ -1,3 +1,4 @@
+
 import NavBar from "./components/Navbar/NavBar"
 import ThemeProvider from 'react-bootstrap/ThemeProvider'
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -7,10 +8,12 @@ import Formation from "./components/pages/Formation/Formation";
 import Cataloge from "./components/pages/cataloge/Cataloge";
 import InscriptionEnLigne from "./components/pages/Inscription en ligne/InscriptionEnLigne";
 import Contact from "./components/pages/Contact/Contact";
-import Apropos from "./components/pages/home/Apropos";
-import Reserv from "./components/Resevation/Reserv";
 import { Suspense } from 'react';
-import ModalCover from "./components/pages/ModalFormationContent/ModalCover";
+import CrudFormation from "./components/Admin/CrudFormation";
+import CrudCatalogue from "./components/Admin/CrudCatalogue";
+import CrudContact from "./components/Admin/CrudContact";
+import CrudInscription from "./components/Admin/CrudInscription";
+import CrudResevation from "./components/Admin/CrudResevation";
 import "./App.css"
 import 'aos/dist/aos.css';
 
@@ -29,15 +32,19 @@ function App() {
           breakpoints={['xxxl', 'xl', 'lg', 'md', 'sm', 'xs', 'xxs']}
           minBreakpoint="xxs"
         >
-          <NavBar /* langue={langue} setlangue={setlangue} *//>
-          <Reserv/>
-          <ModalCover/>
+          <NavBar/>
+          
         <Routes>
           <Route path="/" element={<Acceuil/>}/>
           <Route path="/Formation" element={<Formation/>}/>
           <Route path="/Cataloge" element={<Cataloge/>}/>
           <Route path="/Contact" element={<Contact/>}/>
           <Route path="/InscriptionEnLigne" element={<InscriptionEnLigne/>}/>
+          <Route path="/Admin/CrudFormation" element={<CrudFormation/>}/>
+          <Route path="/Admin/CrudCatalogue" element={<CrudCatalogue/>}/>
+          <Route path="/Admin/CrudContact" element={<CrudContact/>}/>
+          <Route path="/Admin/CrudInscription" element={<CrudInscription/>}/>
+          <Route path="/Admin/CrudResevation" element={<CrudResevation/>}/>
         </Routes>
         </ThemeProvider>
       </div>

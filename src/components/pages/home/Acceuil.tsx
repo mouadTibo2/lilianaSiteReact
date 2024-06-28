@@ -5,7 +5,7 @@ import Col from 'react-bootstrap/Col';
 import Footer from "./Footer";
 import { CSSProperties } from "react";
 import Slide1 from  "/public/images/Slide-1.jpg";
-
+import Reserv from "../../Resevation/Reserv";
 export default function Acceuil(){
 
   const styleImage: CSSProperties ={
@@ -27,7 +27,7 @@ export default function Acceuil(){
           </Col>
         </Row>
       </div>
-      
+      <Reserv/>
       <Container>
         <Row>
           <Col className='my-5'>

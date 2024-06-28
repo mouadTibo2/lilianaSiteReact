@@ -7,6 +7,7 @@ import Button from "react-bootstrap/Button";
 import { useState } from "react";
 import { CSSProperties } from "react";
 import imageContact from "../../../../public/images/contactUs.jpg";
+import Reserv from "../../Resevation/Reserv";
 interface ContactData {
   nom: string;
   email: string;
@@ -68,7 +69,7 @@ export default function Contact() {
           </Col>
         </Row>
       </div>
-
+      <Reserv/>
       <Container fluid="xxl" className="w-75 vh-100 mt-5" data-aos="fade-right">
         <Form
           noValidate

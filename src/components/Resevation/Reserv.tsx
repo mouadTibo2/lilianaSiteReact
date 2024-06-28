@@ -23,7 +23,7 @@ const Reserv = () => {
     return(<>
       <div className="position-relative">
         <div className="position-fixed top-50 end-0 z-1">
-          <Button className="myBtn rounded" variant="outline-danger" data-aos="zoom-in-left" onClick={()=> setBtnState(true)}>Reserver</Button>
+          <Button className="myBtn rounded" variant="outline-primary" data-aos="zoom-in-left" onClick={()=> setBtnState(true)}>Reserver</Button>
         </div>
       </div>
       <div className="position-relative ">
@@ -37,7 +37,7 @@ const Reserv = () => {
     return(<>
       <div className="position-relative hideBtn">
         <div className="position-fixed top-50 end-0 z-1">
-          <Button className="myBtn rounded" variant="outline-danger" data-aos="zoom-in-left"onClick={()=> setBtnState(true)}>Reserver</Button>
+          <Button className="myBtn rounded" variant="outline-primary" data-aos="zoom-in-left"onClick={()=> setBtnState(true)}>Reserver</Button>
         </div>
       </div>
       <div className="position-relative">

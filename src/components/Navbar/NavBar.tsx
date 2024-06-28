@@ -2,6 +2,7 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import Button from "react-bootstrap/Button";
+import NavDropdown from 'react-bootstrap/NavDropdown';
 import plateFormImage from "/public/images/arrow-bar-right.svg";
 import TopNavBar from "./TopNavBar";
 import { useState } from "react";
@@ -9,6 +10,8 @@ import { useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import logo from "../../../public/images/logo921.jpg";
+
+import ModalCover from "../pages/ModalFormationContent/ModalCover"
 export default function NavBar() {
   const { t } = useTranslation();
   const [screenWidth, setScreenWidth] = useState(window.screen.width);
@@ -57,6 +60,19 @@ export default function NavBar() {
               <Nav.Link to="/InscriptionEnLigne" as={NavLink}>
                 {t("inscriptionEnLigne")}
               </Nav.Link>
+              <NavDropdown title="Admin" id="basic-nav-dropdown">
+                <NavDropdown.Item to="/Admin/CrudFormation" as={NavLink}>Formation</NavDropdown.Item>
+                <NavDropdown.Item to="/Admin/CrudCatalogue" as={NavLink}>
+                  Catalogue
+                </NavDropdown.Item>
+                <NavDropdown.Item to="/Admin/CrudContact" as={NavLink}>Contact</NavDropdown.Item>
+                <NavDropdown.Item to="/Admin/CrudInscription" as={NavLink}>
+                  Inscription
+                </NavDropdown.Item>
+                <NavDropdown.Item to="/Admin/CrudResevation" as={NavLink}>
+                  Resevation
+                </NavDropdown.Item>
+            </NavDropdown>
             </Nav>
           </Navbar.Collapse>
           <Navbar.Collapse id="basic-navbar-nav">
@@ -72,6 +88,8 @@ export default function NavBar() {
           </Navbar.Collapse>
         </Container>
       </Navbar>
+      
+      <ModalCover/>
     </>
   );
 }

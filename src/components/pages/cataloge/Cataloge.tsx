@@ -5,6 +5,8 @@ import CatalogeBody from "./CatalogeBody";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import bgCatalogue from "../../../../public/images/bgCatalogue.jpg";
+import Reserv from "../../Resevation/Reserv";
+
 export default function Cataloge() {
   const styleImage: CSSProperties = {
     width: "100%",
@@ -29,7 +31,7 @@ export default function Cataloge() {
           </Col>
         </Row>
       </div>
-
+      <Reserv/>
       <h1 className="my-3 text-center text-secondary">Notre Catalogue</h1>
       <CatalogeBody />
 

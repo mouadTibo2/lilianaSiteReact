@@ -7,6 +7,7 @@ import Button from "react-bootstrap/Button";
 import { useState } from "react";
 import { CSSProperties } from "react";
 import imageInscrition from "../../../../public/images/inscriptionOnligne.jpg";
+import Reserv from "../../Resevation/Reserv";
 interface ContactData {
   nom: string;
   preNom: string;
@@ -103,7 +104,7 @@ export default function InscriptionEnLigne() {
           </Col>
         </Row>
       </div>
-
+      <Reserv/>
       <Container fluid="xxl" className="w-75 mt-5">
         <Form
           noValidate

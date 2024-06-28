@@ -9,7 +9,7 @@ import { JourEtTempDisponibleData } from "./JourEtTempDisponible";
 
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
-import OptionDesFormation from "./OptionDesFormation"
+import OptionDesFormation from "./OptionDesFormation";
 
 interface reservationOnline {
   nom: string;
@@ -20,15 +20,20 @@ interface reservationOnline {
 }
 
 function ReservationCart() {
-  const [startDate, setStartDate] = useState(new Date);
+  const [startDate, setStartDate] = useState(new Date());
   const isWeekday = (date: Date) => {
     const day = date.getDay();
     return day !== 0 && day !== 6;
   };
 
   useEffect(() => {
-    console.log( (startDate.getMonth()+1).toString()+"-" + startDate.getDate().toString()+"-" + startDate.getFullYear().toString());
-    
+    console.log(
+      (startDate.getMonth() + 1).toString() +
+        "-" +
+        startDate.getDate().toString() +
+        "-" +
+        startDate.getFullYear().toString()
+    );
   });
 
   const [validated, setValidated] = useState(false);
@@ -60,12 +65,19 @@ function ReservationCart() {
       tempReservation: tempReservation,
     });
   };
-  const handleDateReservation = (date: Date):void => {
+  const handleDateReservation = (date: Date): void => {
     setStartDate(date);
-    const DateReservation = (startDate.getMonth()+1).toString()+"-" + startDate.getDate().toString()+"-" + startDate.getFullYear().toString();
-    setReservationOnline({...reservationOnline, DateReservation :DateReservation});
+    const DateReservation =
+      (startDate.getMonth() + 1).toString() +
+      "-" +
+      startDate.getDate().toString() +
+      "-" +
+      startDate.getFullYear().toString();
+    setReservationOnline({
+      ...reservationOnline,
+      DateReservation: DateReservation,
+    });
   };
-  
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -111,7 +123,7 @@ function ReservationCart() {
               required
             >
               <option value="">Open this select menu</option>
-              <OptionDesFormation/>
+              <OptionDesFormation />
             </Form.Select>
           </Col>
           <Col md={6} className="mt-3">
@@ -120,10 +132,10 @@ function ReservationCart() {
               Date Reservation
             </Form.Label>
             <DatePicker
-             showIcon className="text-center"
+              showIcon
+              className="text-center"
               selected={startDate}
               onChange={(date) => handleDateReservation(date)}
-              
               filterDate={isWeekday}
               placeholderText="Select a weekday"
             />

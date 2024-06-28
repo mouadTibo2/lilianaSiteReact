@@ -3,7 +3,8 @@
 
 
 
-[
+{
+    "formationData":[
     {
       "idFormation": 1,
       "titreformation":"Bureautique",
@@ -506,4 +507,115 @@
       ]
     }
 
-  ]
+  ],
+    "catalogueData":[
+    {
+        "id": 1,
+        "imagePath":"../../../images/formationContinue.png"
+    },
+    {
+        "id": 2,
+        "imagePath":"../../../images/formation.png"
+        
+    },
+    {
+        "id": 3,
+        "imagePath":"../../../images/logoliliana.jpg"
+    },
+    {
+        "id": 4,
+        "imagePath":"../../../images/formationPourLesSalairie.jpg"
+    },    
+    {
+        "id": 5,
+        "imagePath":"../../../images/skyimage.jpg"
+    },
+    {
+        "id": 6,
+        "imagePath":"../../../images/Slide-1.jpg"
+    },
+    {
+        "id": 7,
+        "imagePath":"../../../images/imagePourleschercheur.jpg"
+    },
+    {
+        "id": 8,
+        "imagePath":"../../../images/imagePourlesJeune.jpg"
+    }, 
+    {
+        "id": 9,
+        "imagePath":"../../../images/sql1.jpg"
+    },
+    {
+        "id": 10,
+        "imagePath":"../../../images/dataBase1.jpg"
+    },
+    {
+        "id": 11,
+        "imagePath":"../../../images/hardware.jpg"
+    },
+    {
+        "id": 12,
+        "imagePath":"../../../images/software.jpg"
+    },
+    {
+        "id": 13,
+        "imagePath":"../../../images/html.png"
+    },
+    {
+        "id": 14,
+        "imagePath":"../../../images/css.png"
+    },
+    {
+        "id": 15,
+        "imagePath":"../../../images/javascript.png"
+    },
+    {
+        "id": 16,
+        "imagePath":"../../../images/bootstrap5.png"
+    },{
+        "id": 17,
+        "imagePath":"../../../images/algorithms.jpg"
+    },
+    {
+        "id": 18,
+        "imagePath":"../../../images/launguageC.jpg"
+    },
+    {
+        "id": 19,
+        "imagePath":"../../../images/ajax.png"
+    },
+    {
+        "id": 20,
+        "imagePath":"../../../images/jquery.png"
+    },
+    {
+        "id": 21,
+        "imagePath":"../../../images/php.jpg"
+    },
+    {
+        "id": 22,
+        "imagePath":"../../../images/phpLaravel.jpg"
+    },
+    {
+        "id": 23,
+        "imagePath":"../../../images/francais.jpg"
+    },
+    {
+        "id": 24,
+        "imagePath":"../../../images/communication.jpg"
+    },
+    {
+        "id": 25,
+        "imagePath":"../../../images/grammaire.jpg"
+    },
+    {
+        "id": 26,
+        "imagePath":"../../../images/englais.jpg"
+    },
+    {
+        "id": 27,
+        "imagePath":"../../../images/digitalMarketing.jpg"
+    }
+
+]}
