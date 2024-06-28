@@ -7,6 +7,7 @@ import axios from 'axios';
 import trash from "../../../public/images/trash3-fill.svg";
 import update from "../../../public/images/pencil.svg";
 import view from "../../../public/images/eye-fill.svg"
+import AdminNavBar from './AdminNavBar';
 import {useEffect, useState} from 'react'
 
 const customStyles = {
@@ -68,6 +69,8 @@ const data = [
 ]
 const CrudResevation = () => {
   return (
+	<>
+	<AdminNavBar/>
     <Container>
     <Row>
       <Col lg={12} className="text-center fs-1 my-3">Gestion Reservation</Col>
@@ -84,6 +87,7 @@ const CrudResevation = () => {
       </Col>
     </Row>
   </Container>
+  </>
   )
 }
 

@@ -8,6 +8,7 @@ import { useState } from "react";
 import { CSSProperties } from "react";
 import imageInscrition from "../../../../public/images/inscriptionOnligne.jpg";
 import Reserv from "../../Resevation/Reserv";
+import NavBar from "../../Navbar/NavBar";
 interface ContactData {
   nom: string;
   preNom: string;
@@ -90,6 +91,7 @@ export default function InscriptionEnLigne() {
   };
   return (
     <>
+    <NavBar/>
       <div className="position-relative w-100">
         <div className="position-absolute" style={styleImage}></div>
         <img

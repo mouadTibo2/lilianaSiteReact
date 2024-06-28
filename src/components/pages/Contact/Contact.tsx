@@ -8,6 +8,7 @@ import { useState } from "react";
 import { CSSProperties } from "react";
 import imageContact from "../../../../public/images/contactUs.jpg";
 import Reserv from "../../Resevation/Reserv";
+import NavBar from "../../Navbar/NavBar";
 interface ContactData {
   nom: string;
   email: string;
@@ -55,6 +56,7 @@ export default function Contact() {
 
   return (
     <>
+    <NavBar/>
       <div className="position-relative w-100">
         <div className="position-absolute" style={styleImage}></div>
         <img

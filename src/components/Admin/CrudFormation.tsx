@@ -10,6 +10,7 @@ import Form from 'react-bootstrap/Form';
 import trash from "../../../public/images/trash3-fill.svg";
 import update from "../../../public/images/pencil.svg";
 import view from "../../../public/images/eye-fill.svg"
+import AdminNavBar from './AdminNavBar';
 import { useEffect, useState} from 'react'
 interface dataProps {
   idFormation: number,
@@ -164,6 +165,8 @@ const Crud = () => {
 		);
 	})
   return (
+    <>
+	  <AdminNavBar/>
     <Container>
     <Row>
       <Col lg={12} className="text-center fs-1 my-3">Gestion Formation</Col>
@@ -181,7 +184,7 @@ const Crud = () => {
     </Row>
       {offCanvaView}
   </Container>
-    
+  </>
   )
 }
 

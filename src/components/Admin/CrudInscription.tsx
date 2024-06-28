@@ -9,6 +9,7 @@ import view from "../../../public/images/eye-fill.svg";
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import Form from 'react-bootstrap/Form';
 import axios from 'axios';
+import AdminNavBar from './AdminNavBar';
 import {useEffect, useState} from 'react'
 const customStyles = {
 	rows: {
@@ -214,6 +215,8 @@ const CrudInscription = () => {
 	})
   
   return (
+	<>
+	<AdminNavBar/>
     <Container>
     <Row>
       <Col lg={12} className="text-center fs-1 my-3">Gestion Inscription</Col>
@@ -234,6 +237,7 @@ const CrudInscription = () => {
     </>
      
   </Container>
+  </>
   )
 }
 

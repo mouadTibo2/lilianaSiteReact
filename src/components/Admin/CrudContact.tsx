@@ -8,6 +8,7 @@ import update from "../../../public/images/pencil.svg";
 import view from "../../../public/images/eye-fill.svg"
 import axios from 'axios';
 import {useEffect, useState} from 'react'
+import AdminNavBar from './AdminNavBar';
 
 const customStyles = {
 	rows: {
@@ -80,6 +81,8 @@ const data = [
 ]
 const CrudContact = () => {
   return (
+	<>
+	<AdminNavBar/>
     <Container>
     <Row>
       <Col lg={12} className="text-center fs-1 my-3">Gestion Contact</Col>
@@ -96,6 +99,7 @@ const CrudContact = () => {
       </Col>
     </Row>
   </Container>
+  </>
   );
 }
 

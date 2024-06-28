@@ -10,6 +10,7 @@ import trash from "../../../public/images/trash3-fill.svg";
 import update from "../../../public/images/pencil.svg";
 import view from "../../../public/images/eye-fill.svg"
 import Offcanvas from 'react-bootstrap/Offcanvas';
+import AdminNavBar from './AdminNavBar';
 interface dataProps{
   id: number;
   imagePath: string;
@@ -83,6 +84,8 @@ const CrudCatalogue = () => {
     .catch(error=> console.log(error))
   },[]);
   return (
+    <>
+    <AdminNavBar/>
     <Container>
     <Row>
       <Col lg={12} className="text-center fs-1 my-3 fw-normal">Gestion Catalogue</Col>
@@ -100,6 +103,7 @@ const CrudCatalogue = () => {
       </Col>
     </Row>
   </Container>
+  </>
   )
 }
 

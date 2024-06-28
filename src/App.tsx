@@ -1,5 +1,5 @@
 
-import NavBar from "./components/Navbar/NavBar"
+
 import ThemeProvider from 'react-bootstrap/ThemeProvider'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {  Routes, Route  } from "react-router-dom";
@@ -31,9 +31,7 @@ function App() {
         <ThemeProvider
           breakpoints={['xxxl', 'xl', 'lg', 'md', 'sm', 'xs', 'xxs']}
           minBreakpoint="xxs"
-        >
-          <NavBar/>
-          
+        >  
         <Routes>
           <Route path="/" element={<Acceuil/>}/>
           <Route path="/Formation" element={<Formation/>}/>

@@ -1,7 +1,7 @@
 import Footer from "../home/Footer";
 import { CSSProperties } from "react";
 import CatalogeBody from "./CatalogeBody";
-
+import NavBar from "../../Navbar/NavBar";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import bgCatalogue from "../../../../public/images/bgCatalogue.jpg";
@@ -17,6 +17,7 @@ export default function Cataloge() {
   };
   return (
     <>
+      <NavBar/>
       <div className="position-relative w-100">
         <div className="position-absolute" style={styleImage}></div>
         <img

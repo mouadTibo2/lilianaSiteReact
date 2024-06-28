@@ -6,6 +6,7 @@ import Footer from "./Footer";
 import { CSSProperties } from "react";
 import Slide1 from  "/public/images/Slide-1.jpg";
 import Reserv from "../../Resevation/Reserv";
+import NavBar from "../../Navbar/NavBar";
 export default function Acceuil(){
 
   const styleImage: CSSProperties ={
@@ -18,6 +19,7 @@ export default function Acceuil(){
   }
   return (
     <> 
+    <NavBar/>
       <div className="position-relative w-100"> 
         <div className="bg-dark opacity-50 position-absolute" style={styleImage}>
         </div>
