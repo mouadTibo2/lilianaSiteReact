@@ -32,13 +32,18 @@ const customStyles = {
 };
 const columns = [
 	{
-		name: 'Title',
-		selector: row => row.title,
+		name: 'Nom',
+		selector: row => row.nom,
 		sortable: true,
 	},
 	{
-		name: 'Year',
-		selector: row => row.year,
+		name: 'PreNom',
+		selector: row => row.preNom,
+		sortable: true,
+	},
+	{
+		name: 'Formation',
+		selector: row => row.formation,
 		sortable: true,
 	},
 	{
@@ -80,9 +85,6 @@ const CrudResevation = () => {
         data={data}
         customStyles={customStyles}
         pagination
-		actions={
-			<Button variant="primary">Nouveau photo</Button>
-		  }
         />
       </Col>
     </Row>

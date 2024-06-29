@@ -92,9 +92,6 @@ const CrudContact = () => {
         data={data}
         customStyles={customStyles}
         pagination
-		actions={
-			<Button variant="primary">Nouveau photo</Button>
-		  }
         />
       </Col>
     </Row>

@@ -59,7 +59,7 @@ export default function NavBar() {
               <Nav.Link to="/InscriptionEnLigne" as={NavLink}>
                 {t("inscriptionEnLigne")}
               </Nav.Link>
-              <Nav.Link to="/Admin/CrudFormation" as={NavLink}>
+              <Nav.Link to="/AdminLogIn" as={NavLink}>
                 Admin
               </Nav.Link>
             </Nav>

@@ -14,6 +14,7 @@ import CrudCatalogue from "./components/Admin/CrudCatalogue";
 import CrudContact from "./components/Admin/CrudContact";
 import CrudInscription from "./components/Admin/CrudInscription";
 import CrudResevation from "./components/Admin/CrudResevation";
+import AdminLogin from './components/Admin/AdminLogin';
 import "./App.css"
 import 'aos/dist/aos.css';
 
@@ -38,6 +39,7 @@ function App() {
           <Route path="/Cataloge" element={<Cataloge/>}/>
           <Route path="/Contact" element={<Contact/>}/>
           <Route path="/InscriptionEnLigne" element={<InscriptionEnLigne/>}/>
+          <Route path="/AdminLogIn" element={<AdminLogin/>}/>
           <Route path="/Admin/CrudFormation" element={<CrudFormation/>}/>
           <Route path="/Admin/CrudCatalogue" element={<CrudCatalogue/>}/>
           <Route path="/Admin/CrudContact" element={<CrudContact/>}/>

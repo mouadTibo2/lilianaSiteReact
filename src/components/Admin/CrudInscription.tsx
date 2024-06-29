@@ -226,9 +226,6 @@ const CrudInscription = () => {
         data={data}
         customStyles={customStyles}
         pagination
-		actions={
-			<Button variant="primary" onClick={handleShow}>Nouveau photo</Button>
-		}
         />
       </Col>
     </Row>

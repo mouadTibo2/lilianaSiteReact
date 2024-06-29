@@ -44,13 +44,6 @@ export default function Footer() {
                 Acceuil
               </Nav.Link>
               <Nav.Link
-                to="/"
-                as={NavLink}
-                className="text-decoration-underline"
-              >
-                A propos
-              </Nav.Link>
-              <Nav.Link
                 to="/Formation"
                 as={NavLink}
                 className="text-decoration-underline"

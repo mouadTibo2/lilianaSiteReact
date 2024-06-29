@@ -9,6 +9,7 @@ import { CSSProperties } from "react";
 import imageInscrition from "../../../../public/images/inscriptionOnligne.jpg";
 import Reserv from "../../Resevation/Reserv";
 import NavBar from "../../Navbar/NavBar";
+import OptionDesFormation from "../../Resevation/OptionDesFormation";
 interface ContactData {
   nom: string;
   preNom: string;
@@ -183,9 +184,9 @@ export default function InscriptionEnLigne() {
                 onChange={(e) => handleVille(e.currentTarget.value)}
               >
                 <option value="">Open this select menu</option>
-                <option value="Ville 1">Ville 1</option>
-                <option value="Ville 2">Ville 2</option>
-                <option value="Ville 3">Ville 3</option>
+                <option value="kenitra">Kenitra</option>
+                <option value="rabat">Rabat</option>
+                <option value="casablanca">Casablanca</option>
               </Form.Select>
             </Col>
             <Col md={12} className="mt-4">
@@ -195,9 +196,7 @@ export default function InscriptionEnLigne() {
                 onChange={(e) => handleFormation(e.currentTarget.value)}
               >
                 <option value="">Open this select menu</option>
-                <option value="homme">Formation 1</option>
-                <option value="femme">Formation 2</option>
-                <option value="autre">Formation 3</option>
+                <OptionDesFormation />
               </Form.Select>
             </Col>
             <Col md={12} className="mt-4">

@@ -618,4 +618,16 @@
         "imagePath":"../../../images/digitalMarketing.jpg"
     }
 
+],
+"user":[
+  {
+    "id":1,
+    "logIn":"mouad",
+    "password":"123"
+  },
+  {
+    "id":2,
+    "logIn":"mourad",
+    "password":"1234"
+  }
 ]}
