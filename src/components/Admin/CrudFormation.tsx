@@ -12,18 +12,21 @@ import update from "../../../public/images/pencil.svg";
 import view from "../../../public/images/eye-fill.svg"
 import AdminNavBar from './AdminNavBar';
 import { useEffect, useState} from 'react'
+
 interface dataProps {
   idFormation: number,
-  titreformation:String,
-  imageFormation: String,
-  descriptionFormation: String,
-  modules:[
-    
+  titreformation:string,
+  imageFormation: string,
+  descriptionFormation: string,
+  modules:[ {
+    moduleId: number,
+    moduleNom: string,
+    moduleImage: string,
+    moduleObjectif: string,
+   }
   ]
 }
   
-
-
 const customStyles = {
 	rows: {
 		style: {
@@ -45,12 +48,25 @@ const customStyles = {
 	},
 };
 
+const paginationComponentOptions = {
+	rowsPerPageText: 'Max de page',
+	rangeSeparatorText: 'de',
+	selectAllRowsItem: false,
+	selectAllRowsItemText: 'Todos',
+};
+const handleChangeSelected = ({ selectedRows }) => {
+  console.log('Selected Rows: ', selectedRows);
+};
 const Crud = () => {
-  const [show, setShow] = useState(false);
-  const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
+  const [showView, setShowView] = useState(false);
+  const handleCloseView = () => setShowView(false);
+  const handleShowView = () => setShowView(true);
+  const [showNew, setShowNew] = useState(false);
+  const handleCloseNew = () => setShowNew(false);
+  const handleShowNew = () => setShowNew(true);
   
   
+
   const [data ,setData] = useState( [] as dataProps[]);
   const [row ,setRow] = useState(data);
   const columns = [
@@ -97,7 +113,7 @@ const Crud = () => {
       sortable: true,
       cell: (row) => (
         <>
-          <Button variant="primary" onClick={handleShow}><img src={view} alt="" /></Button>
+          <Button variant="primary" onClick={handleShowView}><img src={view} alt="" /></Button>
           <Button variant="success" className='mx-2'><img src={update} alt="" /></Button>
           <Button variant="danger"><img src={trash} alt="" /></Button>
         </>
@@ -116,7 +132,7 @@ const Crud = () => {
   const offCanvaView =data.map(item =>{
 		return (
 			<>
-			<Offcanvas show={show} onHide={handleClose}>
+			<Offcanvas show={showView} onHide={handleCloseView}>
 				<Offcanvas.Header closeButton>
 				<Offcanvas.Title>View</Offcanvas.Title>
 				</Offcanvas.Header>
@@ -143,27 +159,62 @@ const Crud = () => {
             placeholder="First name"
             value={item.descriptionFormation}
           />
-          <Form.Label>Date de Naissaince</Form.Label>
-          <Figure className='mt-3'>
-            <Figure.Image
-              width={171}
-              height={170}
-              alt="171x180"
-              src={row.imageFormation}
-            />
-        </Figure>
+          <Form.Label className='mt-3'>Image</Form.Label>
+          <div>
+            <Figure className='mt-3'>
+              <Figure.Image
+                width={171}
+                height={170}
+                alt="171x180"
+                src={item.imageFormation}
+              />
+            </Figure>
+          </div>
           <Form.Label>Modules</Form.Label>
-          <Form.Control
-            disabled
-            type="text"
-            placeholder="First name"
-            value={item.modules}
-          />
+          <div>
+          {item.modules.map(item =>{
+            return (<>
+              <Form.Label>Module {item.moduleId}</Form.Label>  
+              <Form.Control
+                disabled
+                type="text"
+                placeholder="First name"
+                value={item.moduleId}
+              />
+              <Form.Control
+                disabled
+                type="text"
+                value={item.moduleNom}
+              />
+              <Form.Control
+                disabled
+                type="text"
+                value={item.moduleImage}
+              />
+              <div>
+                <Figure className='mt-3'>
+                  <Figure.Image
+                    width={171}
+                    height={170}
+                    alt="171x180"
+                    src={item.moduleImage}
+                  />
+                </Figure>
+              </div>
+              <Form.Control
+                disabled
+                type="textarea"
+                value={item.moduleObjectif}
+              />
+            </>);})
+          }
+          </div>
 				</Offcanvas.Body>
 			</Offcanvas>
 			</>
 		);
-	})
+	});
+
   return (
     <>
 	  <AdminNavBar/>
@@ -176,13 +227,67 @@ const Crud = () => {
         data={data}
         customStyles={customStyles}
         pagination
+        paginationComponentOptions={paginationComponentOptions}
+        selectableRows
+        onSelectedRowsChange={handleChangeSelected}
         actions={
-          <Button variant="primary">Nouveau photo</Button>
+          <Button variant="primary" onClick={handleShowNew}>Nouveau Formation</Button>
         }
         />
       </Col>
     </Row>
+    <>
+      <Offcanvas show={showNew} onHide={handleCloseNew}>
+        <Offcanvas.Header closeButton>
+          <Offcanvas.Title>Nouveau Formation</Offcanvas.Title>
+        </Offcanvas.Header>
+        <Offcanvas.Body>
+        <Form.Label>Id de Formation</Form.Label>
+          <Form.Control
+            type="text"
+            placeholder="First name"
+            value=""
+          />
+          <Form.Label>Titre de Formation</Form.Label>
+          <Form.Control
+            disabled
+            type="text"
+            placeholder="First name"
+            value=""
+          />
+          <Form.Label>Description Formation</Form.Label>
+          <Form.Control
+            type="text"
+            maxLength={20}
+            placeholder="First name"
+            value=""
+          />
+          <Form.Label>Date de Naissaince</Form.Label>
+          <Form.Control
+            type="text"
+            maxLength={20}
+            placeholder="First name"
+            value=""
+          />
+          <Form.Label>image</Form.Label>
+          <Figure className='mt-3'>
+            <Figure.Image
+              width={171}
+              height={170}
+              alt="171x180"
+              src=""
+            />
+        </Figure>
+          <Form.Label>Modules</Form.Label>
+          <Form.Control
+            type="text"
+            placeholder="First name"
+            value=""
+          />
+        </Offcanvas.Body>
+      </Offcanvas>
       {offCanvaView}
+    </>
   </Container>
   </>
   )

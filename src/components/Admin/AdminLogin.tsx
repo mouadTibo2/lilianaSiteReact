@@ -12,7 +12,7 @@ interface logInValue {
 	logIn: string;
 	password: string;
 }
-const AdminLogin = () => {
+function AdminLogin() {
 	const [data, setData] = useState([] as logInValue[]);
 	const [logIn,setLogIn] = useState<string>("");
 	const [password,setPassword] = useState<string>("");

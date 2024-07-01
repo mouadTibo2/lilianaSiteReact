@@ -30,6 +30,15 @@ const customStyles = {
 		},
 	},
 };
+const paginationComponentOptions = {
+	rowsPerPageText: 'Max de page',
+	rangeSeparatorText: 'de',
+	selectAllRowsItem: false,
+	selectAllRowsItemText: 'Todos',
+};
+const handleChangeSelected = ({ selectedRows }) => {
+	console.log('Selected Rows: ', selectedRows);
+};
 const columns = [
 	{
 		name: 'Nom',
@@ -92,6 +101,9 @@ const CrudContact = () => {
         data={data}
         customStyles={customStyles}
         pagination
+		paginationComponentOptions={paginationComponentOptions}
+		selectableRows
+        onSelectedRowsChange={handleChangeSelected}
         />
       </Col>
     </Row>
