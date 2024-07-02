@@ -1,0 +1,150 @@
+  const offCanvaView =data.map(item =>{
+		return (
+			<>
+			<Offcanvas show={showView} onHide={handleCloseView}>
+				<Offcanvas.Header closeButton>
+				<Offcanvas.Title>View</Offcanvas.Title>
+				</Offcanvas.Header>
+				<Offcanvas.Body>
+				<Form.Label>Id de Formation</Form.Label>
+          <Form.Control
+            disabled
+            type="text"
+            placeholder="First name"
+            value={item.id}
+          />
+          <Form.Label>Titre de Formation</Form.Label>
+          <Form.Control
+            disabled
+            type="text"
+            placeholder="First name"
+            value={item.imagePath}
+          />
+          <Form.Label>Image</Form.Label>
+          <div>
+            <Figure className='mt-3'>
+              <Figure.Image
+                width={171}
+                height={170}
+                alt="171x180"
+                src={item.imagePath}
+              />
+            </Figure>
+          </div>
+          </Offcanvas.Body>
+			</Offcanvas>
+			</>
+		);
+	})
+
+
+    <>
+      <Offcanvas show={showNew} onHide={handleCloseNew}>
+        <Offcanvas.Header closeButton>
+          <Offcanvas.Title>Nouveau Photo</Offcanvas.Title>
+        </Offcanvas.Header>
+        <Offcanvas.Body>
+        <Form.Label>Id de Formation</Form.Label>
+          <Form.Control
+            type="text"
+            value=""
+          />
+          <Form.Label>chemin d'image</Form.Label>
+          <Form.Control
+            type="text"
+            value=""
+          />
+         
+        </Offcanvas.Body>
+      </Offcanvas>
+
+      {offCanvaView}
+    </>
+
+    const offCanvaView =data.map(item =>{
+		return (
+			<>
+      
+			<Offcanvas show={show} onHide={handleClose}>
+				<Offcanvas.Header closeButton>
+				<Offcanvas.Title>View</Offcanvas.Title>
+				</Offcanvas.Header>
+				<Offcanvas.Body>
+				<Form.Label>Id de Formation</Form.Label>
+          <Form.Control
+            disabled
+            type="text"
+            placeholder="First name"
+            value={item.idFormation}
+          />
+          <Form.Label>Titre de Formation</Form.Label>
+          <Form.Control
+            disabled
+            type="text"
+            placeholder="First name"
+            value={item.titreformation}
+          />
+          <Form.Label>Description Formation</Form.Label>
+          <Form.Control
+            disabled
+            type="text"
+            maxLength={20}
+            placeholder="First name"
+            value={item.descriptionFormation}
+          />
+          <Form.Label className='mt-3'>Image</Form.Label>
+          <div>
+            <Figure className='mt-3'>
+              <Figure.Image
+                width={171}
+                height={170}
+                alt="171x180"
+                src={item.imageFormation}
+              />
+            </Figure>
+          </div>
+          <Form.Label>Modules</Form.Label>
+          <div>
+          {item.modules.map(item =>{
+            return (<>
+              <Form.Label>Module {item.moduleId}</Form.Label>  
+              <Form.Control
+                disabled
+                type="text"
+                placeholder="First name"
+                value={item.moduleId}
+              />
+              <Form.Control
+                disabled
+                type="text"
+                value={item.moduleNom}
+              />
+              <Form.Control
+                disabled
+                type="text"
+                value={item.moduleImage}
+              />
+              <div>
+                <Figure className='mt-3'>
+                  <Figure.Image
+                    width={171}
+                    height={170}
+                    alt="171x180"
+                    src={item.moduleImage}
+                  />
+                </Figure>
+              </div>
+              <Form.Control
+                disabled
+                type="textarea"
+                value={item.moduleObjectif}
+              />
+            </>);})
+          }
+          </div>
+				</Offcanvas.Body>
+			</Offcanvas>
+			</>
+		);
+	});
+       {offCanvaView}

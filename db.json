@@ -6,7 +6,7 @@
 {
     "formationData":[
     {
-      "idFormation": 1,
+      "id": 1,
       "titreformation":"Bureautique",
       "imageFormation": "../../images/burautique.jpg",
       "descriptionFormation": "Word - Execel - PowerPoint (2016)",
@@ -32,7 +32,7 @@
       ]
     },
     {
-      "idFormation":2,
+      "id":2,
       "titreformation":"Base informatique",
       "imageFormation": "../../images/burautique.jpg",
       "descriptionFormation": "Hardware - Software",
@@ -52,7 +52,7 @@
       ]
     },
     {
-      "idFormation":3,
+      "id":3,
       "titreformation":"Dévloppement Web - FrontEnd",
       "imageFormation": "../../../images/frontEnd.jpg",
       "descriptionFormation": "HTML - CSS - Jvascript - BootStrap 5",
@@ -84,7 +84,7 @@
       ]
     },
     {
-      "idFormation": 4,
+      "id": 4,
       "titreformation":"Dévloppement Web - BackEnd",
       "imageFormation": "../../../images/backend1.jpg",
       "descriptionFormation": "PHP - AJAX - JQUERY - LARAVEL",
@@ -116,8 +116,8 @@
       ]
     },
     {
-      "idFormation": 5,
-      "titreformation":"Base bde Données",
+      "id": 5,
+      "titreformation":"Base de Données",
       "imageFormation": "../../../images/dataBase1.jpg",
       "descriptionFormation": "Langage SQL - SGBD : MYSQL",
       "modules":[
@@ -136,7 +136,7 @@
       ]
     },
     {
-      "idFormation": 6,
+      "id": 6,
       "titreformation":"Prgrammation intiation",
       "imageFormation": "../../../images/burautique.jpg",
       "descriptionFormation": "Algrithme - Langage C",
@@ -156,7 +156,7 @@
       ]
     },
     {
-      "idFormation": 7,
+      "id": 7,
       "titreformation":"Formation en Management",
       "imageFormation": "../../images/management.jpg",
       "descriptionFormation": "Communication - les fonctions de gestion - leadership",
@@ -219,7 +219,7 @@
       ]
     },
     {
-      "idFormation": 8,
+      "id": 8,
       "titreformation":"Formation comptabilité Générale",
       "imageFormation": "../../images/management.jpg",
       "descriptionFormation": "Formation comptabilité Générale  - Marketing Stratégique - Marketing Digital",
@@ -252,7 +252,7 @@
       ]
     },
     {
-      "idFormation": 9,
+      "id": 9,
       "titreformation":"Formation Comptabilité analytique",
       "imageFormation": "../../images/management.jpg",
       "descriptionFormation": "Formation comptabilité Générale  - Marketing Stratégique - Marketing Digital",
@@ -285,7 +285,7 @@
       ]
     },
     {
-      "idFormation": 10,
+      "id": 10,
       "titreformation":"Formation en Ressources Humaines",
       "imageFormation": "../../images/management1.jpg",
       "descriptionFormation": "Gestion Administrative  - Recrutement - Relations Sociales ",
@@ -342,7 +342,7 @@
       ]
     },
     {
-      "idFormation": 11,
+      "id": 11,
       "titreformation":"Formation en Marketing",
       "imageFormation": "../../images/digitalMarketing1.jpg",
       "descriptionFormation": "Fondements du Marketing  - Marketing Stratégique - Marketing Digital",
@@ -399,7 +399,7 @@
       ]
     },
     {
-      "idFormation": 12,
+      "id": 12,
       "titreformation":"Language - Francais - Basic",
       "imageFormation": "../../images/francais.jpg",
       "descriptionFormation": "Basic  - communication - Grammaire",
@@ -426,7 +426,7 @@
       ]
     },
     {
-      "idFormation": 13,
+      "id": 13,
       "titreformation":"Language - Englais - Basic",
       "imageFormation": "../../images/englais.jpg",
       "descriptionFormation": "Basic  - communication - Grammaire",
@@ -453,7 +453,7 @@
       ]
     },
     {
-      "idFormation": 14,
+      "id": 14,
       "titreformation":"Language - Englais - Avancer",
       "imageFormation": "../../images/englais.jpg",
       "descriptionFormation": "Avancer  - communication-Avancer - Grammaire-Avancer",
@@ -480,7 +480,7 @@
       ]
     },
     {
-      "idFormation": 15,
+      "id": 15,
       "titreformation":"Language - Francais - Avancer",
       "imageFormation": "../../images/francais.jpg",
       "descriptionFormation": "Avancer  - communication-Avancer - Grammaire-Avancer",
